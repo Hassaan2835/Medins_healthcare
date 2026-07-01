@@ -1,0 +1,132 @@
+/* ============================================
+   CORE VALUES SECTION
+   ============================================ */
+.core-values {
+  background: var(--dark-50);
+  position: relative;
+  overflow: hidden;
+}
+
+.core-values-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.cv-pattern {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 1px 1px, var(--dark-300) 1px, transparent 0);
+  background-size: 40px 40px;
+  opacity: 0.3;
+}
+
+/* Values Grid */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.value-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 40px 28px 36px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--dark-200);
+  transition: var(--transition-base);
+  text-align: center;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  border-color: transparent;
+}
+
+.value-card-number {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: var(--dark-100);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  transition: var(--transition-base);
+}
+
+.value-card:hover .value-card-number {
+  color: var(--primary-100);
+}
+
+.value-icon-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 1.6rem;
+  color: var(--accent-color, var(--primary));
+  background: color-mix(in srgb, var(--accent-color, var(--primary)) 10%, transparent);
+  transition: var(--transition-base);
+}
+
+.value-card:hover .value-icon-circle {
+  background: var(--accent-color, var(--primary));
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px color-mix(in srgb, var(--accent-color, var(--primary)) 30%, transparent);
+}
+
+.value-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--dark-800);
+  margin-bottom: 12px;
+}
+
+.value-description {
+  font-size: 0.9rem;
+  color: var(--dark-500);
+  line-height: 1.7;
+}
+
+.value-card-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--accent-color, var(--primary));
+  transform: scaleX(0);
+  transition: var(--transition-base);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+.value-card:hover .value-card-line {
+  transform: scaleX(1);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 1024px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .value-card {
+    padding: 32px 24px 28px;
+  }
+}

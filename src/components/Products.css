@@ -1,0 +1,152 @@
+/* ============================================
+   PRODUCTS SECTION
+   ============================================ */
+.products {
+  background: var(--dark-50);
+  position: relative;
+}
+
+/* Filter */
+.products-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 48px;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: #ffffff;
+  border: 1px solid var(--dark-200);
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--dark-600);
+  transition: var(--transition-base);
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: var(--primary-50);
+}
+
+.filter-btn.active {
+  background: var(--gradient-primary);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(13, 110, 110, 0.3);
+}
+
+.filter-icon {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Products Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.product-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--dark-200);
+  transition: var(--transition-base);
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-card-hover);
+  border-color: transparent;
+}
+
+.product-card-header {
+  padding: 24px 24px 20px;
+  background: linear-gradient(135deg, var(--dark-50) 0%, var(--primary-50) 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.product-type-badge {
+  padding: 4px 12px;
+  background: var(--primary-100);
+  color: var(--primary);
+  font-size: 0.72rem;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.product-emoji {
+  font-size: 2.5rem;
+}
+
+.product-card-body {
+  padding: 20px 24px 28px;
+}
+
+.product-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--dark-800);
+  margin-bottom: 6px;
+}
+
+.product-description {
+  font-size: 0.88rem;
+  color: var(--dark-500);
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.product-category-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: var(--dark-50);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--dark-500);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .products-filter {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+
+  .filter-name {
+    display: none;
+  }
+
+  .filter-btn.active .filter-name {
+    display: inline;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+  }
+}

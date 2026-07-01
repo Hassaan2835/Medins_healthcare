@@ -1,0 +1,167 @@
+/* ============================================
+   VISION & MISSION SECTION
+   ============================================ */
+.vision-mission {
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.vm-bg-decor {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.vm-circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid var(--dark-200);
+}
+
+.vm-circle-1 {
+  width: 500px;
+  height: 500px;
+  top: -200px;
+  right: -200px;
+  opacity: 0.3;
+}
+
+.vm-circle-2 {
+  width: 350px;
+  height: 350px;
+  bottom: -100px;
+  left: -100px;
+  opacity: 0.2;
+}
+
+/* VM Grid */
+.vm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 48px;
+  margin-bottom: 60px;
+}
+
+.vm-card {
+  padding: 48px 40px;
+  border-radius: var(--radius-xl);
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-base);
+}
+
+.vm-vision {
+  background: linear-gradient(135deg, #0A1628 0%, #0D4E4E 100%);
+  color: #fff;
+}
+
+.vm-mission {
+  background: linear-gradient(135deg, #0D6E6E 0%, #1ABC9C 100%);
+  color: #fff;
+}
+
+.vm-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+}
+
+.vm-card-icon-wrap {
+  width: 68px;
+  height: 68px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.vm-card-icon {
+  font-size: 1.6rem;
+  color: var(--accent-light);
+}
+
+.vm-card-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.vm-card-divider {
+  width: 50px;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.vm-card-text {
+  font-size: 1.02rem;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.8;
+}
+
+.vm-card-pattern {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 160px;
+  height: 160px;
+  border: 30px solid rgba(255,255,255,0.04);
+  border-radius: 50%;
+}
+
+/* CTA Banner */
+.vm-cta-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 48px 52px;
+  background: var(--dark-50);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--dark-200);
+}
+
+.vm-cta-content h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark-800);
+  margin-bottom: 8px;
+}
+
+.vm-cta-content p {
+  font-size: 0.95rem;
+  color: var(--dark-500);
+  max-width: 500px;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 1024px) {
+  .vm-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vm-cta-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 36px 28px;
+  }
+
+  .vm-cta-content p {
+    max-width: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .vm-card {
+    padding: 36px 28px;
+  }
+}
