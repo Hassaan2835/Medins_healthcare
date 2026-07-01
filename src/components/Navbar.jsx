@@ -9,6 +9,8 @@ const Navbar = () => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const location = useLocation();
 
+  const [logoLoaded, setLogoLoaded] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -55,13 +57,25 @@ const Navbar = () => {
       <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
         <div className="container navbar-content">
           <Link to="/" className="navbar-logo">
-            <div className="logo-icon">
-              <span className="logo-cross">+</span>
-            </div>
-            <div className="logo-text">
-              <span className="logo-name">Medins</span>
-              <span className="logo-tagline">Healthcare</span>
-            </div>
+            <img 
+              src="/logo.png" 
+              alt="Medins Healthcare" 
+              className="logo-img" 
+              onLoad={() => setLogoLoaded(true)}
+              onError={(e) => { e.target.style.display = 'none'; setLogoLoaded(false); }}
+              style={{ display: logoLoaded ? 'block' : 'none', height: '48px' }}
+            />
+            {!logoLoaded && (
+              <>
+                <div className="logo-icon">
+                  <span className="logo-cross">+</span>
+                </div>
+                <div className="logo-text">
+                  <span className="logo-name">Medins</span>
+                  <span className="logo-tagline">Healthcare</span>
+                </div>
+              </>
+            )}
           </Link>
 
           {/* Desktop Nav */}

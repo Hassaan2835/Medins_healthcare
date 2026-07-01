@@ -6,6 +6,8 @@ import './Footer.css';
 const Footer = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
 
+  const [logoLoaded, setLogoLoaded] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 400);
@@ -33,13 +35,25 @@ const Footer = () => {
               {/* Company Info */}
               <div className="footer-col footer-about">
                 <div className="footer-logo">
-                  <div className="footer-logo-icon">
-                    <span>+</span>
-                  </div>
-                  <div className="footer-logo-text">
-                    <span className="footer-logo-name">Medins</span>
-                    <span className="footer-logo-tagline">Healthcare</span>
-                  </div>
+                  <img 
+                    src="/logo.png" 
+                    alt="Medins Healthcare" 
+                    className="logo-img" 
+                    onLoad={() => setLogoLoaded(true)}
+                    onError={(e) => { e.target.style.display = 'none'; setLogoLoaded(false); }}
+                    style={{ display: logoLoaded ? 'block' : 'none', height: '48px' }}
+                  />
+                  {!logoLoaded && (
+                    <>
+                      <div className="footer-logo-icon">
+                        <span>+</span>
+                      </div>
+                      <div className="footer-logo-text">
+                        <span className="footer-logo-name">Medins</span>
+                        <span className="footer-logo-tagline">Healthcare</span>
+                      </div>
+                    </>
+                  )}
                 </div>
                 <p className="footer-description">
                   Leading pharmaceutical manufacturer and exporter, delivering WHO-certified 

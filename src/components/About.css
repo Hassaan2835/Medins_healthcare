@@ -137,15 +137,15 @@
 
 .about-img-1 {
   grid-row: span 2;
-  background: linear-gradient(135deg, #0D6E6E20, #0D6E6E40);
+  background: linear-gradient(135deg, rgba(11, 60, 130, 0.15), rgba(11, 60, 130, 0.3));
 }
 
 .about-img-2 {
-  background: linear-gradient(135deg, #1ABC9C20, #1ABC9C40);
+  background: linear-gradient(135deg, rgba(225, 77, 77, 0.15), rgba(225, 77, 77, 0.3));
 }
 
 .about-img-3 {
-  background: linear-gradient(135deg, #0A162820, #0A162840);
+  background: linear-gradient(135deg, rgba(7, 39, 84, 0.15), rgba(7, 39, 84, 0.3));
 }
 
 .about-img-placeholder {

@@ -1,10 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0D6E6E;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#1ABC9C;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  <rect width="100" height="100" rx="20" fill="url(#grad)"/>
-  <text x="50" y="68" font-family="Arial, sans-serif" font-size="55" font-weight="bold" fill="white" text-anchor="middle">+</text>
+  <!-- Speed lines (Blue) -->
+  <line x1="10" y1="38" x2="25" y2="38" stroke="#0b3c82" stroke-width="3" stroke-linecap="round" />
+  <line x1="15" y1="43" x2="28" y2="43" stroke="#0b3c82" stroke-width="3" stroke-linecap="round" />
+  
+  <!-- Speed lines (Red) -->
+  <line x1="18" y1="49" x2="25" y2="49" stroke="#e14d4d" stroke-width="3" stroke-linecap="round" />
+  <line x1="12" y1="54" x2="24" y2="54" stroke="#e14d4d" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Back Leg / Tail Swoosh (Red) -->
+  <path d="M 32 58 C 22 62, 12 55, 18 48 C 19 46, 22 45, 23 47 C 24 50, 19 53, 27 53 C 29 53, 31 55, 32 58 Z" fill="#e14d4d" />
+  
+  <!-- Runner head (Blue) -->
+  <circle cx="36" cy="38" r="5" fill="#0b3c82" />
+  
+  <!-- Front Arm Swoosh (Red) -->
+  <path d="M 37 42 C 40 40, 42 42, 41 45 C 40 47, 37 46, 37 42 Z" fill="#e14d4d" />
+  
+  <!-- Runner Body & Legs (Blue) -->
+  <path d="M 31 40 C 27 40, 24 45, 27 50 C 29 53, 30 57, 33 60 C 35 62, 38 65, 41 68 C 42 69, 43 69, 44 68 C 45 67, 44 65, 43 64 C 40 61, 37 59, 36 55 C 34 50, 37 48, 38 46 C 39 44, 38 43, 37 43 C 35 43, 33 40, 31 40 Z" fill="#0b3c82" />
 </svg>

@@ -6,25 +6,25 @@ const values = [
     icon: <FaHandshake />,
     title: 'Integrity',
     description: 'We conduct business with the highest ethical standards, ensuring transparency and trust in every interaction with our partners and clients.',
-    color: '#0D6E6E'
+    color: '#0b3c82'
   },
   {
     icon: <FaLeaf />,
     title: 'Quality First',
     description: 'Every product undergoes rigorous quality testing. We never compromise on the standards that protect patient health and well-being.',
-    color: '#1ABC9C'
+    color: '#e14d4d'
   },
   {
     icon: <FaBullseye />,
     title: 'Innovation',
     description: 'We invest in cutting-edge research and technology to develop better pharmaceutical solutions that address evolving healthcare needs.',
-    color: '#3B82F6'
+    color: '#1554aa'
   },
   {
     icon: <FaEye />,
     title: 'Customer Focus',
     description: 'Our clients are at the heart of everything we do. We provide personalized service, competitive pricing, and reliable delivery worldwide.',
-    color: '#8B5CF6'
+    color: '#f27878'
   }
 ];
 
