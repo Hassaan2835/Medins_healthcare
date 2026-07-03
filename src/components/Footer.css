@@ -27,12 +27,17 @@
   gap: 40px;
 }
 
-/* Footer Logo */
 .footer-logo {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-bottom: 20px;
+}
+
+.footer-logo .logo-img {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
 }
 
 .footer-logo-icon {

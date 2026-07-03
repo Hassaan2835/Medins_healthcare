@@ -137,7 +137,7 @@
 
 .about-img-1 {
   grid-row: span 2;
-  background: linear-gradient(135deg, rgba(11, 60, 130, 0.15), rgba(11, 60, 130, 0.3));
+  background: linear-gradient(135deg, rgba(20, 48, 104, 0.15), rgba(20, 48, 104, 0.3));
 }
 
 .about-img-2 {
@@ -145,7 +145,7 @@
 }
 
 .about-img-3 {
-  background: linear-gradient(135deg, rgba(7, 39, 84, 0.15), rgba(7, 39, 84, 0.3));
+  background: linear-gradient(135deg, rgba(11, 25, 41, 0.15), rgba(11, 25, 41, 0.3));
 }
 
 .about-img-placeholder {

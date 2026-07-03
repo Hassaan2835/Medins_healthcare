@@ -25,23 +25,23 @@ const Footer = () => {
       <footer className="footer">
         <div className="footer-wave">
           <svg viewBox="0 0 1440 100" fill="none">
-            <path d="M0 40L60 35C120 30 240 20 360 25C480 30 600 50 720 55C840 60 960 50 1080 40C1200 30 1320 20 1380 15L1440 10V100H0V40Z" fill="var(--dark)"/>
+            <path d="M0 40L60 35C120 30 240 20 360 25C480 30 600 50 720 55C840 60 960 50 1080 40C1200 30 1320 20 1380 15L1440 10V100H0V40Z" fill="var(--dark)" />
           </svg>
         </div>
-        
+
         <div className="footer-main">
           <div className="container">
             <div className="footer-grid">
               {/* Company Info */}
               <div className="footer-col footer-about">
                 <div className="footer-logo">
-                  <img 
-                    src="/logo.png" 
-                    alt="Medins Healthcare" 
-                    className="logo-img" 
+                  <img
+                    src="/logo.png"
+                    alt="Medins Healthcare"
+                    className="logo-img"
                     onLoad={() => setLogoLoaded(true)}
                     onError={(e) => { e.target.style.display = 'none'; setLogoLoaded(false); }}
-                    style={{ display: logoLoaded ? 'block' : 'none', height: '48px' }}
+                    style={{ display: logoLoaded ? 'block' : 'none', height: '60px' }}
                   />
                   {!logoLoaded && (
                     <>
@@ -56,8 +56,8 @@ const Footer = () => {
                   )}
                 </div>
                 <p className="footer-description">
-                  Leading pharmaceutical manufacturer and exporter, delivering WHO-certified 
-                  healthcare products to 30+ countries. Quality, trust, and innovation at the 
+                  Leading pharmaceutical manufacturer and exporter, delivering WHO-certified
+                  healthcare products to 30+ countries. Quality, trust, and innovation at the
                   heart of everything we do.
                 </p>
                 <div className="footer-socials">
@@ -100,7 +100,7 @@ const Footer = () => {
                 <ul className="footer-contact">
                   <li>
                     <FaMapMarkerAlt className="contact-icon" />
-                    <span>Suite 305, Business Plaza,<br/>Shahrah-e-Faisal, Karachi, Pakistan</span>
+                    <span>Suite 305, Business Plaza,<br />Shahrah-e-Faisal, Karachi, Pakistan</span>
                   </li>
                   <li>
                     <FaPhoneAlt className="contact-icon" />

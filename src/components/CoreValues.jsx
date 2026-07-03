@@ -6,7 +6,7 @@ const values = [
     icon: <FaHandshake />,
     title: 'Integrity',
     description: 'We conduct business with the highest ethical standards, ensuring transparency and trust in every interaction with our partners and clients.',
-    color: '#0b3c82'
+    color: '#143068'
   },
   {
     icon: <FaLeaf />,
@@ -18,7 +18,7 @@ const values = [
     icon: <FaBullseye />,
     title: 'Innovation',
     description: 'We invest in cutting-edge research and technology to develop better pharmaceutical solutions that address evolving healthcare needs.',
-    color: '#1554aa'
+    color: '#1c4490'
   },
   {
     icon: <FaEye />,

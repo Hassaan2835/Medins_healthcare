@@ -78,12 +78,17 @@
   height: 72px;
 }
 
-/* Logo */
 .navbar-logo {
   display: flex;
   align-items: center;
   gap: 12px;
   z-index: 10;
+}
+
+.logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
 }
 
 .logo-icon {
