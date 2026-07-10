@@ -177,6 +177,10 @@ button {
   border: 1px solid var(--primary-100);
 }
 
+.page-hero .section-subtitle {
+  color: #ffffff;
+}
+
 .section-subtitle::before {
   content: '';
   width: 8px;
