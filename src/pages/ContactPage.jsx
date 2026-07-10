@@ -1,11 +1,23 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock, FaWhatsapp, FaPaperPlane, FaCheckCircle } from 'react-icons/fa';
 import './ContactPage.css';
 
 const ContactPage = () => {
+  const location = useLocation();
   const [formData, setFormData] = useState({
     name: '', email: '', phone: '', subject: '', message: ''
   });
+
+  useEffect(() => {
+    if (location.state) {
+      setFormData(prev => ({
+        ...prev,
+        subject: location.state.subject || prev.subject,
+        message: location.state.message || prev.message
+      }));
+    }
+  }, [location.state]);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
