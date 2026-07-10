@@ -458,12 +458,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: var(--radius-lg);
-  background: #ffffff;
-  padding: 24px;
-  box-shadow: var(--shadow-2xl);
+  background: transparent;
+  padding: 0;
   transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .lightbox-img {
@@ -487,7 +484,7 @@
   }
   
   .lightbox-image-container {
-    padding: 12px;
+    padding: 0;
     max-width: 95vw;
     max-height: 85vh;
   }
