@@ -104,26 +104,26 @@ const Navbar = () => {
             {isMobileOpen ? <HiX size={26} /> : <HiMenuAlt3 size={26} />}
           </button>
         </div>
-
-        {/* Mobile Menu */}
-        <div className={`mobile-menu ${isMobileOpen ? 'open' : ''}`}>
-          <div className="mobile-menu-content">
-            {navLinks.map((link, index) => (
-              <Link
-                key={link.name}
-                to={link.path}
-                className={`mobile-link ${location.pathname === link.path ? 'active' : ''}`}
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                {link.name}
-              </Link>
-            ))}
-            <Link to="/contact" className="btn btn-primary mobile-cta">
-              Get a Quote
-            </Link>
-          </div>
-        </div>
       </nav>
+
+      {/* Mobile Menu */}
+      <div className={`mobile-menu ${isMobileOpen ? 'open' : ''}`}>
+        <div className="mobile-menu-content">
+          {navLinks.map((link, index) => (
+            <Link
+              key={link.name}
+              to={link.path}
+              className={`mobile-link ${location.pathname === link.path ? 'active' : ''}`}
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              {link.name}
+            </Link>
+          ))}
+          <Link to="/contact" className="btn btn-primary mobile-cta">
+            Get a Quote
+          </Link>
+        </div>
+      </div>
 
       {/* Mobile Overlay */}
       {isMobileOpen && (

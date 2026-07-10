@@ -116,22 +116,24 @@ const ProductDetailPage = () => {
               {activeTab === 'composition' && (
                 <div className="tab-pane-content animate-fade-in">
                   <h3 className="tab-pane-title">Supplement Facts / Composition</h3>
-                  <table className="composition-table">
-                    <thead>
-                      <tr>
-                        <th>Active Ingredient</th>
-                        <th>Strength / Concentration</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {product.composition && product.composition.map((item, idx) => (
-                        <tr key={idx}>
-                          <td className="ingredient-name">{item.ingredient}</td>
-                          <td className="ingredient-strength">{item.strength}</td>
+                  <div className="composition-table-wrapper">
+                    <table className="composition-table">
+                      <thead>
+                        <tr>
+                          <th>Active Ingredient</th>
+                          <th>Strength / Concentration</th>
                         </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                      </thead>
+                      <tbody>
+                        {product.composition && product.composition.map((item, idx) => (
+                          <tr key={idx}>
+                            <td className="ingredient-name">{item.ingredient}</td>
+                            <td className="ingredient-strength">{item.strength}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
                   <p className="composition-note">* Formulated to meet international pharmacopoeia standards.</p>
                 </div>
               )}

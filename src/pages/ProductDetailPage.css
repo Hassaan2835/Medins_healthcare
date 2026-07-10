@@ -201,6 +201,12 @@
   padding-left: 12px;
 }
 
+.composition-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 /* Composition Table Styling */
 .composition-table {
   width: 100%;
