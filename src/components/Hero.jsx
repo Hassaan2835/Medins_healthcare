@@ -32,8 +32,8 @@ const Hero = () => {
           </h1>
 
           <p className="hero-description animate-fadeInUp delay-2">
-            Leading pharmaceutical manufacturer, exporter and distributor delivering 
-            WHO-certified, high-quality healthcare products across the globe. From 
+            Leading pharmaceutical manufacturer, exporter and distributor delivering
+            WHO-certified, high-quality healthcare products across the globe. From
             pharmaceuticals to nutraceuticals — we care for your health.
           </p>
 
@@ -62,7 +62,7 @@ const Hero = () => {
             <div className="hero-trust-divider"></div>
             <div className="hero-trust-item">
               <FaGlobeAsia className="trust-icon" />
-              <span>30+ Countries</span>
+              <span>Made in Pakistan</span>
             </div>
           </div>
         </div>
@@ -74,13 +74,13 @@ const Hero = () => {
               <div className="hero-card-icon">🏥</div>
               <div className="hero-card-info">
                 <h4>Pharmaceutical Products</h4>
-                <p>500+ certified products</p>
+                <p>9+ certified products</p>
               </div>
             </div>
 
             {/* Floating Stats */}
             <div className="hero-stat hero-stat-1 animate-float">
-              <div className="hero-stat-number">500+</div>
+              <div className="hero-stat-number">9+</div>
               <div className="hero-stat-label">Products</div>
             </div>
 
@@ -90,7 +90,7 @@ const Hero = () => {
             </div>
 
             <div className="hero-stat hero-stat-3 animate-float">
-              <div className="hero-stat-number">10+</div>
+              <div className="hero-stat-number">1o+</div>
               <div className="hero-stat-label">Years</div>
             </div>
 
@@ -110,7 +110,7 @@ const Hero = () => {
       {/* Bottom Wave */}
       <div className="hero-wave">
         <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 60L48 52C96 44 192 28 288 24C384 20 480 28 576 40C672 52 768 68 864 72C960 76 1056 68 1152 56C1248 44 1344 28 1392 20L1440 12V120H1392C1344 120 1248 120 1152 120C1056 120 960 120 864 120C768 120 672 120 576 120C480 120 384 120 288 120C192 120 96 120 48 120H0V60Z" fill="white"/>
+          <path d="M0 60L48 52C96 44 192 28 288 24C384 20 480 28 576 40C672 52 768 68 864 72C960 76 1056 68 1152 56C1248 44 1344 28 1392 20L1440 12V120H1392C1344 120 1248 120 1152 120C1056 120 960 120 864 120C768 120 672 120 576 120C480 120 384 120 288 120C192 120 96 120 48 120H0V60Z" fill="white" />
         </svg>
       </div>
     </section>

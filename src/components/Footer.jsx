@@ -129,7 +129,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="container footer-bottom-content">
             <p>&copy; {new Date().getFullYear()} Medins Healthcare. All Rights Reserved.</p>
-            <p className="footer-made">Made with <FaHeart className="heart-icon" /> in Pakistan</p>
+            <p className="footer-made">Made by <FaHeart className="heart-icon" /> Hassaan in Pakistan</p>
           </div>
         </div>
       </footer>
