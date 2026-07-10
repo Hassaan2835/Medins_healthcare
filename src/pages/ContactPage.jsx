@@ -99,7 +99,7 @@ const ContactPage = () => {
                 <FaMapMarkerAlt />
               </div>
               <h4>Visit Us</h4>
-              <p>Suite 305, Business Plaza,<br/>Shahrah-e-Faisal, Karachi</p>
+              <p>street#26-A, Extension Chaklala scheme III,<br/>Rawalpindi, Pakistan</p>
             </div>
             <div className="contact-info-card">
               <div className="contact-info-icon">
@@ -233,10 +233,17 @@ const ContactPage = () => {
 
               <div className="contact-map-card">
                 <h4>Our Location</h4>
-                <div className="map-placeholder">
-                  <FaMapMarkerAlt className="map-pin" />
-                  <p>Karachi, Pakistan</p>
-                  <span>View on Google Maps</span>
+                <div className="map-container" style={{ width: '100%', height: '220px', borderRadius: '8px', overflow: 'hidden' }}>
+                  <iframe 
+                    src="https://maps.google.com/maps?q=33.584333,73.090333&z=16&output=embed" 
+                    width="100%" 
+                    height="100%" 
+                    style={{ border: 0 }} 
+                    allowFullScreen="" 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Medins Healthcare Location"
+                  ></iframe>
                 </div>
               </div>
             </div>

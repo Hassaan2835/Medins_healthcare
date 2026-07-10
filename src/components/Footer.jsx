@@ -99,7 +99,7 @@ const Footer = () => {
                 <ul className="footer-contact">
                   <li>
                     <FaMapMarkerAlt className="contact-icon" />
-                    <span>Suite 305, Business Plaza,<br />Shahrah-e-Faisal, Karachi, Pakistan</span>
+                    <span>street#26-A, Extension Chaklala scheme III,<br />Rawalpindi, Pakistan</span>
                   </li>
                   <li>
                     <FaPhoneAlt className="contact-icon" />
