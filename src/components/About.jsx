@@ -4,8 +4,8 @@ import './About.css';
 
 const stats = [
   { icon: <FaCalendarCheck />, number: 10, suffix: '+', label: 'Years Experience' },
-  { icon: <FaBoxOpen />, number: 500, suffix: '+', label: 'Products' },
-  { icon: <FaGlobeAmericas />, number: 30, suffix: '+', label: 'Countries Served' },
+  { icon: <FaBoxOpen />, number: 9, suffix: '+', label: 'Products' },
+  { icon: <FaGlobeAmericas />, value: 'Pakistan', label: 'Country' },
   { icon: <FaUsers />, number: 1000, suffix: '+', label: 'Happy Clients' },
 ];
 
@@ -17,8 +17,8 @@ const features = [
   },
   {
     icon: <FaTruck />,
-    title: 'Global Distribution',
-    description: 'Reliable supply chain delivering healthcare products to hospitals, pharmacies, and distributors across 30+ countries.'
+    title: 'Nationwide Distribution',
+    description: 'Reliable supply chain delivering healthcare products to hospitals, pharmacies, and distributors all over Pakistan.'
   },
   {
     icon: <FaFlask />,
@@ -85,7 +85,7 @@ const About = () => {
             <div className="about-stat-item" key={index}>
               <div className="about-stat-icon">{stat.icon}</div>
               <div className="about-stat-number">
-                <CounterNumber target={stat.number} suffix={stat.suffix} />
+                {stat.value ? stat.value : <CounterNumber target={stat.number} suffix={stat.suffix} />}
               </div>
               <div className="about-stat-label">{stat.label}</div>
             </div>
@@ -97,19 +97,19 @@ const About = () => {
           <div className="about-text">
             <span className="section-subtitle">About Medins Healthcare</span>
             <h2 className="section-title">
-              Delivering <span>Quality Healthcare</span> Solutions Worldwide
+              Delivering <span>Quality Healthcare</span> Solutions Across Pakistan
             </h2>
             <p className="about-description">
               Established in 2015, <strong>Medins Healthcare</strong> is a leading pharmaceutical 
-              company specializing in the manufacturing, export, and distribution of high-quality 
-              healthcare products. We are committed to improving global health by providing 
+              company specializing in the manufacturing and distribution of high-quality 
+              healthcare products. We are committed to improving health standards by providing 
               affordable, WHO-certified medicines and nutraceuticals.
             </p>
             <p className="about-description">
               Our pharmaceuticals and nutraceuticals are manufactured in our state-of-the-art 
-              GMP-compliant facility in Pakistan. With a portfolio of over 500 products spanning 
+              GMP-compliant facility in Pakistan. With our growing portfolio spanning 
               tablets, capsules, syrups, injectables, creams, and medical disposables, we serve 
-              hospitals, pharmacies, clinics, and distributors worldwide.
+              hospitals, pharmacies, clinics, and distributors all over Pakistan.
             </p>
 
             <div className="about-highlights">
