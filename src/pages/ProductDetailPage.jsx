@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { products } from '../data/productsData';
-import { FaTablets, FaPrescriptionBottleAlt, FaVials, FaPills, FaArrowLeft, FaInfoCircle, FaClipboardList, FaFilePrescription, FaShieldAlt } from 'react-icons/fa';
+import { FaTablets, FaPrescriptionBottleAlt, FaVials, FaPills, FaArrowLeft, FaInfoCircle, FaClipboardList, FaFilePrescription, FaShieldAlt, FaTimes } from 'react-icons/fa';
 import './ProductDetailPage.css';
 
 const categories = [
@@ -15,6 +15,8 @@ const ProductDetailPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('composition');
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
+  const [isZoomed, setIsZoomed] = useState(false);
 
   const product = products.find(p => p.id === parseInt(id));
 
@@ -56,7 +58,7 @@ const ProductDetailPage = () => {
         <div className="product-detail-grid">
           {/* Left Column: Product Image */}
           <div className="product-detail-visual">
-            <div className="product-detail-img-card">
+            <div className="product-detail-img-card" onClick={() => setIsLightboxOpen(true)} style={{ cursor: 'pointer' }}>
               {product.image ? (
                 <img src={product.image} alt={product.name} className="product-detail-img" />
               ) : (
@@ -201,6 +203,24 @@ const ProductDetailPage = () => {
           </div>
         </div>
       </div>
+
+      {/* Lightbox Overlay Modal */}
+      {isLightboxOpen && (
+        <div className="lightbox-overlay" onClick={() => { setIsLightboxOpen(false); setIsZoomed(false); }}>
+          <button className="lightbox-close" onClick={() => { setIsLightboxOpen(false); setIsZoomed(false); }}>
+            <FaTimes />
+          </button>
+          <div className="lightbox-image-container" onClick={(e) => e.stopPropagation()}>
+            <img 
+              src={product.image} 
+              alt={product.name} 
+              className={`lightbox-img ${isZoomed ? 'zoomed' : ''}`} 
+              onClick={() => setIsZoomed(!isZoomed)}
+              style={{ cursor: isZoomed ? 'zoom-out' : 'zoom-in' }}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
