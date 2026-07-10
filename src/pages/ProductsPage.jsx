@@ -15,7 +15,7 @@ const ProductsPage = () => {
           </span>
           <h1 className="page-hero-title">Comprehensive <span>Product Portfolio</span></h1>
           <p className="page-hero-description">
-            Explore our full range of WHO-certified pharmaceutical products, nutraceuticals, and medical disposables.
+            Explore our full range of WHO-certified nutraceutical products, supplements, and medical disposables.
           </p>
         </div>
       </section>

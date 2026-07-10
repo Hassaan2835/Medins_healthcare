@@ -5,7 +5,7 @@ const articles = [
   {
     id: 1,
     title: 'Medins Healthcare Achieves WHO Pre-Qualification',
-    excerpt: 'A major milestone in our journey as we receive WHO pre-qualification for select pharmaceutical products, opening new markets globally.',
+    excerpt: 'A major milestone in our journey as we receive WHO pre-qualification for select nutraceutical products, expanding our reach nationwide.',
     date: 'March 15, 2024',
     author: 'Medins Team',
     category: 'Achievement',
@@ -13,8 +13,8 @@ const articles = [
   },
   {
     id: 2,
-    title: 'Expanding Our Export Operations to Latin America',
-    excerpt: 'Medins Healthcare announces new partnerships with distributors across Latin America, bringing affordable medicines to millions.',
+    title: 'Expanding Our Distribution Operations to Punjab & Sindh',
+    excerpt: 'Medins Healthcare announces new partnerships with distributors across Punjab and Sindh, bringing affordable nutraceuticals to millions.',
     date: 'February 8, 2024',
     author: 'Medins Team',
     category: 'Expansion',
@@ -40,8 +40,8 @@ const articles = [
   },
   {
     id: 5,
-    title: 'Medins Healthcare at Africa Health Exhibition',
-    excerpt: 'Our team participated in the Africa Health Exhibition, showcasing our pharmaceutical portfolio to international buyers.',
+    title: 'Medins Healthcare at Pakistan Health Exhibition',
+    excerpt: 'Our team participated in the Pakistan Health Exhibition, showcasing our nutraceutical portfolio to national healthcare providers.',
     date: 'November 12, 2023',
     author: 'Medins Team',
     category: 'Event',

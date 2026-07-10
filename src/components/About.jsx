@@ -23,7 +23,7 @@ const features = [
   {
     icon: <FaFlask />,
     title: 'R&D Innovation',
-    description: 'Continuous research and development to bring cutting-edge pharmaceutical formulations and nutraceuticals to market.'
+    description: 'Continuous research and development to bring cutting-edge nutraceutical products to market.'
   },
   {
     icon: <FaAward />,
@@ -100,13 +100,13 @@ const About = () => {
               Delivering <span>Quality Healthcare</span> Solutions Across Pakistan
             </h2>
             <p className="about-description">
-              Established in 2015, <strong>Medins Healthcare</strong> is a leading pharmaceutical 
+              Established in 2015, <strong>Medins Healthcare</strong> is a leading nutraceutical 
               company specializing in the manufacturing and distribution of high-quality 
               healthcare products. We are committed to improving health standards by providing 
-              affordable, WHO-certified medicines and nutraceuticals.
+              affordable, WHO-certified nutraceuticals and supplements.
             </p>
             <p className="about-description">
-              Our pharmaceuticals and nutraceuticals are manufactured in our state-of-the-art 
+              Our nutraceuticals and supplements are manufactured in our state-of-the-art 
               GMP-compliant facility in Pakistan. With our growing portfolio spanning 
               tablets, capsules, syrups, injectables, creams, and medical disposables, we serve 
               hospitals, pharmacies, clinics, and distributors all over Pakistan.
@@ -123,11 +123,11 @@ const About = () => {
               </div>
               <div className="about-highlight-item">
                 <div className="highlight-dot"></div>
-                <span>Export to 30+ Countries</span>
+                <span>Distribution Across Pakistan</span>
               </div>
               <div className="about-highlight-item">
                 <div className="highlight-dot"></div>
-                <span>500+ Pharmaceutical Products</span>
+                <span>9+ Nutraceutical Products</span>
               </div>
             </div>
           </div>

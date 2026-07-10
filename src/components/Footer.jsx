@@ -56,8 +56,8 @@ const Footer = () => {
                   )}
                 </div>
                 <p className="footer-description">
-                  Leading pharmaceutical manufacturer and exporter, delivering WHO-certified
-                  healthcare products to 30+ countries. Quality, trust, and innovation at the
+                  Leading nutraceutical manufacturer and distributor, delivering WHO-certified
+                  healthcare products all over Pakistan. Quality, trust, and innovation at the
                   heart of everything we do.
                 </p>
                 <div className="footer-socials">

@@ -17,13 +17,13 @@ const values = [
   {
     icon: <FaBullseye />,
     title: 'Innovation',
-    description: 'We invest in cutting-edge research and technology to develop better pharmaceutical solutions that address evolving healthcare needs.',
+    description: 'We invest in cutting-edge research and technology to develop better nutraceutical solutions that address evolving healthcare needs.',
     color: '#1c4490'
   },
   {
     icon: <FaEye />,
     title: 'Customer Focus',
-    description: 'Our clients are at the heart of everything we do. We provide personalized service, competitive pricing, and reliable delivery worldwide.',
+    description: 'Our clients are at the heart of everything we do. We provide personalized service, competitive pricing, and reliable delivery across Pakistan.',
     color: '#f27878'
   }
 ];
@@ -42,7 +42,7 @@ const CoreValues = () => {
           </h2>
           <p className="section-description">
             At Medins Healthcare, our core values define who we are and shape every decision 
-            we make in delivering healthcare excellence to the world.
+            we make in delivering healthcare excellence.
           </p>
         </div>
 

@@ -32,11 +32,10 @@ const Hero = () => {
           </h1>
 
           <p className="hero-description animate-fadeInUp delay-2">
-            Leading pharmaceutical manufacturer, exporter and distributor delivering
-            WHO-certified, high-quality healthcare products across the globe. From
-            pharmaceuticals to nutraceuticals — we care for your health.
+            Leading nutraceutical manufacturer and distributor delivering
+            WHO-certified, high-quality healthcare products all over Pakistan. We care for your health.
           </p>
-
+          
           <div className="hero-buttons animate-fadeInUp delay-3">
             <Link to="/products" className="btn btn-primary btn-lg hero-btn-primary">
               Explore Products
@@ -73,7 +72,7 @@ const Hero = () => {
             <div className="hero-card hero-card-main">
               <div className="hero-card-icon">🏥</div>
               <div className="hero-card-info">
-                <h4>Pharmaceutical Products</h4>
+                <h4>Nutraceutical Products</h4>
                 <p>9+ certified products</p>
               </div>
             </div>
@@ -85,12 +84,12 @@ const Hero = () => {
             </div>
 
             <div className="hero-stat hero-stat-2 animate-float-slow">
-              <div className="hero-stat-number">30+</div>
-              <div className="hero-stat-label">Countries</div>
+              <div className="hero-stat-number">Pakistan</div>
+              <div className="hero-stat-label">Country</div>
             </div>
 
             <div className="hero-stat hero-stat-3 animate-float">
-              <div className="hero-stat-number">1o+</div>
+              <div className="hero-stat-number">10+</div>
               <div className="hero-stat-label">Years</div>
             </div>
 

@@ -2,12 +2,12 @@ import { FaHeartbeat, FaTruck, FaFlask, FaAward, FaUsers, FaGlobeAmericas, FaBox
 import './AboutPage.css';
 
 const timeline = [
-  { year: '2015', title: 'Company Founded', description: 'Medins Healthcare established with a vision to deliver quality pharmaceutical products globally.' },
-  { year: '2016', title: 'GMP Certification', description: 'Achieved Good Manufacturing Practice certification, meeting international quality standards.' },
-  { year: '2018', title: 'Export Expansion', description: 'Expanded export operations to 15+ countries across Africa, Asia, and Latin America.' },
-  { year: '2020', title: 'Product Line Growth', description: 'Portfolio expanded to 300+ products including nutraceuticals and medical disposables.' },
-  { year: '2022', title: 'WHO Pre-Qualification', description: 'Achieved WHO pre-qualification status for select pharmaceutical products.' },
-  { year: '2024', title: '500+ Products', description: 'Reached milestone of 500+ certified products serving 30+ countries worldwide.' },
+  { year: '2015', title: 'Company Founded', description: 'Medins Healthcare established with a vision to deliver quality nutraceutical products.' },
+  { year: '2016', title: 'GMP Certification', description: 'Achieved Good Manufacturing Practice certification, meeting quality standards.' },
+  { year: '2018', title: 'Distribution Expansion', description: 'Expanded distribution network across Pakistan.' },
+  { year: '2020', title: 'Product Line Growth', description: 'Portfolio expanded to include nutraceuticals and medical disposables.' },
+  { year: '2022', title: 'WHO Pre-Qualification', description: 'Achieved WHO pre-qualification status for select nutraceutical products.' },
+  { year: '2024', title: 'Growing Products', description: 'Reached milestone of certified nutraceutical products serving Pakistan.' },
 ];
 
 const certifications = [
@@ -31,7 +31,7 @@ const AboutPage = () => {
           </span>
           <h1 className="page-hero-title">Our Story of <span>Healthcare Excellence</span></h1>
           <p className="page-hero-description">
-            A decade of commitment to delivering quality pharmaceutical products and improving healthcare outcomes worldwide.
+            A decade of commitment to delivering quality nutraceutical products and improving healthcare outcomes across Pakistan.
           </p>
         </div>
       </section>
@@ -44,22 +44,20 @@ const AboutPage = () => {
               <span className="section-subtitle">Who We Are</span>
               <h2 className="section-title">A Trusted Name in <span>Healthcare</span></h2>
               <p>
-                <strong>Medins Healthcare</strong> is a premier pharmaceutical manufacturing and 
-                exporting company based in Pakistan. Since our establishment in 2015, we have 
-                grown from a small trading firm into a globally recognized healthcare solutions 
-                provider.
+                <strong>Medins Healthcare</strong> is a premier nutraceutical manufacturing and 
+                distribution company based in Pakistan. Since our establishment in 2015, we have 
+                grown into a recognized healthcare solutions provider.
               </p>
               <p>
-                We specialize in the manufacturing, trading, and export of a comprehensive range 
-                of pharmaceutical products including tablets, capsules, syrups, injectables, 
-                creams, ointments, ophthalmic preparations, and medical disposables. Our products 
+                We specialize in the manufacturing and distribution of a comprehensive range 
+                of nutraceutical products including tablets, capsules, syrups, 
+                creams, ointments, and medical disposables. Our products 
                 are manufactured in state-of-the-art GMP-compliant facilities and meet the 
-                highest international quality standards.
+                highest quality standards.
               </p>
               <p>
-                With exports spanning over 30 countries across Africa, Asia, Latin America, 
-                and the Caribbean, we have established ourselves as a reliable partner for 
-                hospitals, pharmacies, distributors, and government health agencies worldwide.
+                With our distribution network spanning across Pakistan, we have established ourselves 
+                as a reliable partner for hospitals, pharmacies, clinics, and distributors nationwide.
               </p>
             </div>
             <div className="about-story-certs">
@@ -100,32 +98,31 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Export Markets */}
+      {/* Pakistan Presence */}
       <section className="section export-section">
         <div className="container">
           <div className="text-center">
-            <span className="section-subtitle">Global Presence</span>
-            <h2 className="section-title">Serving <span>30+ Countries</span> Worldwide</h2>
+            <span className="section-subtitle">Our Reach</span>
+            <h2 className="section-title">Serving <span>All Regions</span> Across Pakistan</h2>
             <p className="section-description">
-              Our pharmaceutical products reach healthcare providers across Africa, Asia, 
-              Latin America, and the Caribbean, making quality medicine accessible worldwide.
+              Our nutraceutical products reach healthcare providers, pharmacies, and clinics in every province of Pakistan, making quality supplements accessible nationwide.
             </p>
           </div>
           <div className="export-regions">
             <div className="region-card">
-              <div className="region-emoji">🌍</div>
-              <h4>Africa</h4>
-              <p>South Africa, Nigeria, Kenya, Tanzania, Somalia, Sierra Leone, Togo, Senegal, Sudan</p>
+              <div className="region-emoji">🏛️</div>
+              <h4>Punjab & Islamabad</h4>
+              <p>Lahore, Faisalabad, Rawalpindi, Multan, Gujranwala, Sargodha, Bahawalpur, Sialkot, Islamabad</p>
             </div>
             <div className="region-card">
-              <div className="region-emoji">🌏</div>
-              <h4>Asia</h4>
-              <p>Pakistan, Afghanistan, Myanmar, Sri Lanka, Central Asian States</p>
+              <div className="region-emoji">🌊</div>
+              <h4>Sindh & Balochistan</h4>
+              <p>Karachi, Hyderabad, Sukkur, Larkana, Mirpurkhas, Quetta, Gwadar, Turbat, Khuzdar</p>
             </div>
             <div className="region-card">
-              <div className="region-emoji">🌎</div>
-              <h4>Americas</h4>
-              <p>Bahamas, Trinidad, Barbados, Guyana, Belize, Mexico, Peru, Colombia, Brazil</p>
+              <div className="region-emoji">⛰️</div>
+              <h4>KPK & Northern Areas</h4>
+              <p>Peshawar, Mardan, Abbottabad, Swat, Kohat, Gilgit, Muzaffarabad, Mirpur</p>
             </div>
           </div>
         </div>
