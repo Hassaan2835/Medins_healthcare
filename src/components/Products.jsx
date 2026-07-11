@@ -60,9 +60,9 @@ const Products = ({ limit }) => {
                 <div className="product-card-header">
                   <div className="product-type-badge">{product.type}</div>
                   <div className="product-emoji">
-                    {product.category === 'tablets' && '💊'}
-                    {product.category === 'syrups' && '🧴'}
-                    {product.category === 'sachets' && '📦'}
+                    {product.category === 'tablets' && <FaPills />}
+                    {product.category === 'syrups' && <FaPrescriptionBottleAlt />}
+                    {product.category === 'sachets' && <FaVials />}
                   </div>
                 </div>
               )}

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { FaHeartbeat, FaTruck, FaFlask, FaAward, FaUsers, FaGlobeAmericas, FaBoxOpen, FaCalendarCheck } from 'react-icons/fa';
+import { FaHeartbeat, FaTruck, FaFlask, FaAward, FaUsers, FaGlobeAmericas, FaBoxOpen, FaCalendarCheck, FaIndustry, FaCapsules } from 'react-icons/fa';
 import './About.css';
 
 const stats = [
@@ -136,19 +136,19 @@ const About = () => {
             <div className="about-image-grid">
               <div className="about-img-card about-img-1">
                 <div className="about-img-placeholder">
-                  <span>🏭</span>
+                  <span><FaIndustry /></span>
                   <p>Manufacturing Facility</p>
                 </div>
               </div>
               <div className="about-img-card about-img-2">
                 <div className="about-img-placeholder">
-                  <span>💊</span>
+                  <span><FaCapsules /></span>
                   <p>Quality Products</p>
                 </div>
               </div>
               <div className="about-img-card about-img-3">
                 <div className="about-img-placeholder">
-                  <span>🌍</span>
+                  <span><FaGlobeAmericas /></span>
                   <p>Global Reach</p>
                 </div>
               </div>

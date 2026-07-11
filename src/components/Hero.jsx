@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FaArrowRight, FaPlay, FaShieldAlt, FaCertificate, FaGlobeAsia } from 'react-icons/fa';
+import { FaArrowRight, FaPlay, FaShieldAlt, FaCertificate, FaGlobeAsia, FaCapsules, FaDna, FaBriefcaseMedical, FaMicroscope, FaHospital } from 'react-icons/fa';
 import { HiSparkles } from 'react-icons/hi';
 import './Hero.css';
 
@@ -12,10 +12,10 @@ const Hero = () => {
         <div className="hero-blob hero-blob-2"></div>
         <div className="hero-blob hero-blob-3"></div>
         <div className="hero-grid-pattern"></div>
-        <div className="hero-float-pill pill-1">💊</div>
-        <div className="hero-float-pill pill-2">🧬</div>
-        <div className="hero-float-pill pill-3">⚕️</div>
-        <div className="hero-float-pill pill-4">🔬</div>
+        <div className="hero-float-pill pill-1"><FaCapsules /></div>
+        <div className="hero-float-pill pill-2"><FaDna /></div>
+        <div className="hero-float-pill pill-3"><FaBriefcaseMedical /></div>
+        <div className="hero-float-pill pill-4"><FaMicroscope /></div>
       </div>
 
       <div className="container hero-container">
@@ -70,7 +70,7 @@ const Hero = () => {
           <div className="hero-visual-wrapper">
             {/* Main Card */}
             <div className="hero-card hero-card-main">
-              <div className="hero-card-icon">🏥</div>
+              <div className="hero-card-icon"><FaHospital /></div>
               <div className="hero-card-info">
                 <h4>Nutraceutical Products</h4>
                 <p>9+ certified products</p>
