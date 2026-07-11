@@ -103,7 +103,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <FaPhoneAlt className="contact-icon" />
-                    <a href="tel:+923001234567">+92 300 1234567</a>
+                    <a href="tel:+923325434674">+92 332 5434674</a>
                   </li>
                   <li>
                     <FaEnvelope className="contact-icon" />
@@ -134,7 +134,7 @@ const Footer = () => {
       </footer>
 
       {/* WhatsApp Button */}
-      <a href="https://wa.me/923001234567" className="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+      <a href="https://wa.me/923325434674" className="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
         <FaWhatsapp />
       </a>
 

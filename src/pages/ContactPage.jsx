@@ -83,8 +83,7 @@ const ContactPage = () => {
                 <FaPhoneAlt />
               </div>
               <h4>Call Us</h4>
-              <a href="tel:+923001234567">+92 300 1234567</a>
-              <a href="tel:+922134567890">+92 21 3456 7890</a>
+              <a href="tel:+923325434674">+92 332 5434674</a>
             </div>
             <div className="contact-info-card">
               <div className="contact-info-icon">
@@ -226,7 +225,7 @@ const ContactPage = () => {
                 </div>
                 <h3>Quick Response via WhatsApp</h3>
                 <p>Need an immediate response? Chat with us directly on WhatsApp for faster communication.</p>
-                <a href="https://wa.me/923001234567" className="btn whatsapp-cta-btn" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/923325434674" className="btn whatsapp-cta-btn" target="_blank" rel="noopener noreferrer">
                   <FaWhatsapp /> Chat on WhatsApp
                 </a>
               </div>

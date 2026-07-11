@@ -36,8 +36,8 @@ const Navbar = () => {
       <div className="top-bar">
         <div className="container top-bar-content">
           <div className="top-bar-left">
-            <a href="tel:+923001234567" className="top-bar-item">
-              <FaPhoneAlt /> +92 300 1234567
+            <a href="tel:+923325434674" className="top-bar-item">
+              <FaPhoneAlt /> +92 332 5434674
             </a>
             <span className="top-bar-divider">|</span>
             <a href="mailto:info@medinshealthcare.com" className="top-bar-item">
@@ -45,7 +45,7 @@ const Navbar = () => {
             </a>
           </div>
           <div className="top-bar-right">
-            <a href="https://wa.me/923001234567" className="top-bar-whatsapp" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/923325434674" className="top-bar-whatsapp" target="_blank" rel="noopener noreferrer">
               <FaWhatsapp /> WhatsApp Us
             </a>
           </div>
