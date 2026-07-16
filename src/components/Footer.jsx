@@ -69,55 +69,56 @@ const Footer = () => {
                 </div>
               </div>
 
-              {/* Quick Links */}
-              <div className="footer-col">
-                <h4 className="footer-heading">Quick Links</h4>
-                <ul className="footer-links">
-                  <li><Link to="/">Home</Link></li>
-                  <li><Link to="/about">About Us</Link></li>
-                  <li><Link to="/products">Products</Link></li>
-                  <li><Link to="/contact">Contact</Link></li>
-                </ul>
-              </div>
+              {/* Right group — pushed to the right */}
+              <div className="footer-links-group">
+                {/* Quick Links */}
+                <div className="footer-col">
+                  <h4 className="footer-heading">Quick Links</h4>
+                  <ul className="footer-links">
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About Us</Link></li>
+                    <li><Link to="/products">Products</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
+                  </ul>
+                </div>
 
-              {/* Products */}
-              <div className="footer-col">
-                <h4 className="footer-heading">Products</h4>
-                <ul className="footer-links">
-                  <li><Link to="/products">Tablets & Capsules</Link></li>
-                  <li><Link to="/products">Syrups & Suspensions</Link></li>
-                  <li><Link to="/products">Injectable Drugs</Link></li>
-                  <li><Link to="/products">Creams & Ointments</Link></li>
-                  <li><Link to="/products">Medical Disposables</Link></li>
-                  <li><Link to="/products">Nutraceuticals</Link></li>
-                </ul>
-              </div>
+                {/* Products */}
+                <div className="footer-col">
+                  <h4 className="footer-heading">Products</h4>
+                  <ul className="footer-links">
+                    <li><Link to="/products">All Products</Link></li>
+                    <li><Link to="/products?category=tablets">Tablets</Link></li>
+                    <li><Link to="/products?category=syrups">Syrups</Link></li>
+                    <li><Link to="/products?category=sachets">Sachets / Powder</Link></li>
+                  </ul>
+                </div>
 
-              {/* Contact */}
-              <div className="footer-col">
-                <h4 className="footer-heading">Contact Us</h4>
-                <ul className="footer-contact">
-                  <li>
-                    <FaMapMarkerAlt className="contact-icon" />
-                    <span>street#26-A, Extension Chaklala scheme III,<br />Rawalpindi, Pakistan</span>
-                  </li>
-                  <li>
-                    <FaPhoneAlt className="contact-icon" />
-                    <a href="tel:+923325434674">+92 332 5434674</a>
-                  </li>
-                  <li>
-                    <FaEnvelope className="contact-icon" />
-                    <a href="mailto:info@medinshealthcare.com">info@medinshealthcare.com</a>
-                  </li>
-                </ul>
+                {/* Contact */}
+                <div className="footer-col">
+                  <h4 className="footer-heading">Contact Us</h4>
+                  <ul className="footer-contact">
+                    <li>
+                      <FaMapMarkerAlt className="contact-icon" />
+                      <span>street#26-A, Extension Chaklala scheme III,<br />Rawalpindi, Pakistan</span>
+                    </li>
+                    <li>
+                      <FaPhoneAlt className="contact-icon" />
+                      <a href="tel:+923325434674">+92 332 5434674</a>
+                    </li>
+                    <li>
+                      <FaEnvelope className="contact-icon" />
+                      <a href="mailto:kq.malik400@gmail.com">kq.malik400@gmail.com</a>
+                    </li>
+                  </ul>
 
-                {/* Newsletter */}
-                <div className="footer-newsletter">
-                  <h5>Subscribe to Newsletter</h5>
-                  <form className="newsletter-form" onSubmit={(e) => e.preventDefault()}>
-                    <input type="email" placeholder="Your email address" />
-                    <button type="submit" className="newsletter-btn">→</button>
-                  </form>
+                  {/* Newsletter */}
+                  <div className="footer-newsletter">
+                    <h5>Subscribe to Newsletter</h5>
+                    <form className="newsletter-form" onSubmit={(e) => e.preventDefault()}>
+                      <input type="email" placeholder="Your email address" />
+                      <button type="submit" className="newsletter-btn">→</button>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
@@ -128,7 +129,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="container footer-bottom-content">
             <p>&copy; {new Date().getFullYear()} Medins Healthcare. All Rights Reserved.</p>
-            <p className="footer-made">Made by <FaHeart className="heart-icon" /> Hassaan in Pakistan</p>
+            <p className="footer-made">Powered By <a href="https://www.linkedin.com/in/hassaankhanofficial/" target="_blank" rel="noopener noreferrer" className="footer-credit-link">Hassaan Khan</a></p>
           </div>
         </div>
       </footer>

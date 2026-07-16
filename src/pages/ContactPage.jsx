@@ -90,8 +90,7 @@ const ContactPage = () => {
                 <FaEnvelope />
               </div>
               <h4>Email Us</h4>
-              <a href="mailto:info@medinshealthcare.com">info@medinshealthcare.com</a>
-              <a href="mailto:sales@medinshealthcare.com">sales@medinshealthcare.com</a>
+              <a href="mailto:kq.malik400@gmail.com">kq.malik400@gmail.com</a>
             </div>
             <div className="contact-info-card">
               <div className="contact-info-icon">

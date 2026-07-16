@@ -22,9 +22,21 @@
 }
 
 .footer-grid {
-  display: grid;
-  grid-template-columns: 1.3fr 0.8fr 0.8fr 1.1fr;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 40px;
+}
+
+.footer-links-group {
+  display: flex;
+  gap: 64px;
+  align-items: flex-start;
+}
+
+.footer-about {
+  max-width: 280px;
+  flex-shrink: 0;
 }
 
 .footer-logo {
@@ -332,4 +344,16 @@
     gap: 8px;
     text-align: center;
   }
+}
+
+.footer-credit-link {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.footer-credit-link:hover {
+  color: var(--accent, #e14d4d);
 }

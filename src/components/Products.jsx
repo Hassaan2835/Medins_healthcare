@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { FaTablets, FaPrescriptionBottleAlt, FaVials, FaPills } from 'react-icons/fa';
 import { products } from '../data/productsData';
 import './Products.css';
@@ -12,7 +12,9 @@ const categories = [
 ];
 
 const Products = ({ limit }) => {
-  const [activeCategory, setActiveCategory] = useState('all');
+  const [searchParams] = useSearchParams();
+  const initialCategory = searchParams.get('category') || 'all';
+  const [activeCategory, setActiveCategory] = useState(initialCategory);
 
   const filteredProducts = activeCategory === 'all'
     ? products
@@ -69,6 +71,11 @@ const Products = ({ limit }) => {
               <div className="product-card-body">
                 <h4 className="product-name">{product.name}</h4>
                 <p className="product-description">{product.description}</p>
+                <div className="product-price">
+                  <span className="price-currency">PKR</span>
+                  <span className="price-amount">{product.price?.toLocaleString()}</span>
+                  <span className="price-note">/ pack</span>
+                </div>
                 <div className="product-category-tag">
                   {categories.find(c => c.id === product.category)?.icon}
                   <span>{categories.find(c => c.id === product.category)?.name}</span>

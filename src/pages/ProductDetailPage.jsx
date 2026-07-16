@@ -84,6 +84,17 @@ const ProductDetailPage = () => {
             <h1 className="product-detail-title">{product.name}</h1>
             <p className="product-detail-description">{product.description}</p>
 
+            {product.price && (
+              <div className="product-detail-price">
+                <span className="detail-price-label">Price</span>
+                <div className="detail-price-value">
+                  <span className="detail-price-currency">PKR</span>
+                  <span className="detail-price-amount">{product.price.toLocaleString()}</span>
+                  <span className="detail-price-note">/ pack</span>
+                </div>
+              </div>
+            )}
+
             {/* Tabs Control */}
             <div className="detail-tabs">
               <button 

@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import { FaHeartbeat, FaTruck, FaFlask, FaAward, FaUsers, FaGlobeAmericas, FaBoxOpen, FaCalendarCheck, FaCheckCircle, FaCertificate, FaIndustry, FaHandshake } from 'react-icons/fa';
 import './AboutPage.css';
 
@@ -18,6 +19,30 @@ const certifications = [
 ];
 
 const AboutPage = () => {
+  const timelineRef = useRef([]);
+
+  useEffect(() => {
+    const observers = [];
+    timelineRef.current.forEach((el, i) => {
+      if (!el) return;
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            // Stagger: each card waits 150ms more than the previous
+            setTimeout(() => {
+              el.classList.add('tl-visible');
+            }, i * 150);
+            observer.disconnect();
+          }
+        },
+        { threshold: 0.2 }
+      );
+      observer.observe(el);
+      observers.push(observer);
+    });
+    return () => observers.forEach(o => o.disconnect());
+  }, []);
+
   return (
     <>
       {/* Page Hero */}
@@ -84,7 +109,11 @@ const AboutPage = () => {
           </div>
           <div className="timeline">
             {timeline.map((item, index) => (
-              <div className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`} key={index}>
+              <div
+                className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}
+                key={index}
+                ref={el => timelineRef.current[index] = el}
+              >
                 <div className="timeline-content">
                   <div className="timeline-year">{item.year}</div>
                   <h4 className="timeline-title">{item.title}</h4>
@@ -109,21 +138,55 @@ const AboutPage = () => {
             </p>
           </div>
           <div className="export-regions">
-            <div className="region-card">
-              <div className="region-emoji">🏛️</div>
-              <h4>Punjab & Islamabad</h4>
-              <p>Lahore, Faisalabad, Rawalpindi, Multan, Gujranwala, Sargodha, Bahawalpur, Sialkot, Islamabad</p>
+
+            {/* Card 1 */}
+            <div className="region-card region-card--punjab">
+              <div className="region-card-dots"></div>
+              <div className="region-card-inner">
+                <div className="region-icon-wrap">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="region-svg">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="currentColor" opacity="0.2"/>
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
+                  </svg>
+                </div>
+                <div className="region-city-count">9 Cities</div>
+                <h4>Punjab &amp; Islamabad</h4>
+                <p>Lahore, Faisalabad, Rawalpindi, Multan, Gujranwala, Sargodha, Bahawalpur, Sialkot, Islamabad</p>
+              </div>
             </div>
-            <div className="region-card">
-              <div className="region-emoji">🌊</div>
-              <h4>Sindh & Balochistan</h4>
-              <p>Karachi, Hyderabad, Sukkur, Larkana, Mirpurkhas, Quetta, Gwadar, Turbat, Khuzdar</p>
+
+            {/* Card 2 */}
+            <div className="region-card region-card--sindh">
+              <div className="region-card-dots"></div>
+              <div className="region-card-inner">
+                <div className="region-icon-wrap">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="region-svg">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="currentColor" opacity="0.2"/>
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
+                  </svg>
+                </div>
+                <div className="region-city-count">9 Cities</div>
+                <h4>Sindh &amp; Balochistan</h4>
+                <p>Karachi, Hyderabad, Sukkur, Larkana, Mirpurkhas, Quetta, Gwadar, Turbat, Khuzdar</p>
+              </div>
             </div>
-            <div className="region-card">
-              <div className="region-emoji">⛰️</div>
-              <h4>KPK & Northern Areas</h4>
-              <p>Peshawar, Mardan, Abbottabad, Swat, Kohat, Gilgit, Muzaffarabad, Mirpur</p>
+
+            {/* Card 3 */}
+            <div className="region-card region-card--kpk">
+              <div className="region-card-dots"></div>
+              <div className="region-card-inner">
+                <div className="region-icon-wrap">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="region-svg">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="currentColor" opacity="0.2"/>
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
+                  </svg>
+                </div>
+                <div className="region-city-count">8 Cities</div>
+                <h4>KPK &amp; Northern Areas</h4>
+                <p>Peshawar, Mardan, Abbottabad, Swat, Kohat, Gilgit, Muzaffarabad, Mirpur</p>
+              </div>
             </div>
+
           </div>
         </div>
       </section>

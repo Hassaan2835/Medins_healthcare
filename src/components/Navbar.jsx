@@ -40,8 +40,8 @@ const Navbar = () => {
               <FaPhoneAlt /> +92 332 5434674
             </a>
             <span className="top-bar-divider">|</span>
-            <a href="mailto:info@medinshealthcare.com" className="top-bar-item">
-              info@medinshealthcare.com
+            <a href="mailto:kq.malik400@gmail.com" className="top-bar-item">
+              kq.malik400@gmail.com
             </a>
           </div>
           <div className="top-bar-right">
@@ -107,6 +107,13 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div className={`mobile-menu ${isMobileOpen ? 'open' : ''}`}>
+        <button
+          className="mobile-menu-close"
+          onClick={() => setIsMobileOpen(false)}
+          aria-label="Close menu"
+        >
+          <HiX size={24} />
+        </button>
         <div className="mobile-menu-content">
           {navLinks.map((link, index) => (
             <Link

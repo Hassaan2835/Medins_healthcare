@@ -203,6 +203,28 @@
   color: var(--primary);
 }
 
+/* Mobile Menu Close Button */
+.mobile-menu-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--dark-100);
+  color: var(--dark-700);
+  border-radius: var(--radius-sm);
+  transition: var(--transition-fast);
+  z-index: 10;
+}
+
+.mobile-menu-close:hover {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
 /* Mobile Menu */
 .mobile-menu {
   position: fixed;

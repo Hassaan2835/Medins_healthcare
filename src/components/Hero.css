@@ -197,7 +197,7 @@
 /* Hero Visual */
 .hero-visual {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -399,6 +399,10 @@
   .hero-visual-wrapper {
     width: 350px;
     height: 350px;
+  }
+
+  .hero-visual {
+    justify-content: center;
   }
 }
 

@@ -143,7 +143,51 @@
   font-size: 1.1rem;
   color: var(--dark-600);
   line-height: 1.6;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
+}
+
+/* Price Block */
+.product-detail-price {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--primary-50);
+  border: 1px solid var(--primary-100);
+  border-radius: var(--radius-md);
+  padding: 14px 20px;
+  margin-bottom: 28px;
+}
+
+.detail-price-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary-600);
+}
+
+.detail-price-value {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.detail-price-currency {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.detail-price-amount {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.detail-price-note {
+  font-size: 0.85rem;
+  color: var(--dark-400);
 }
 
 /* Detail Tabs */

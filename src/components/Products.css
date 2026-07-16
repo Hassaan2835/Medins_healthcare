@@ -151,6 +151,33 @@
   line-height: 1.6;
 }
 
+.product-price {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 14px;
+}
+
+.price-currency {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.price-amount {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.price-note {
+  font-size: 0.75rem;
+  color: var(--dark-400);
+}
+
 .product-category-tag {
   display: inline-flex;
   align-items: center;
