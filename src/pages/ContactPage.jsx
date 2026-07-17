@@ -28,29 +28,35 @@ const ContactPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-    
+
     try {
-      const response = await fetch('http://localhost:5000/api/contact', {
+      const response = await fetch('https://formsubmit.co/ajax/kq.malik400@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json'
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone || 'Not provided',
+          subject: formData.subject,
+          message: formData.message,
+          _subject: `New Medins Healthcare Contact Form: ${formData.subject}`,
+          _cc: 'medinshealthcare@gmail.com',
+          _template: 'table'
+        }),
       });
       const data = await response.json();
-      if (response.ok && data.success) {
+      if (response.ok && (data.success === 'true' || data.success === true)) {
         setIsSubmitted(true);
         setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
       } else {
         alert(data.message || 'Something went wrong. Please try again.');
       }
     } catch (error) {
-      console.error('Error submitting contact form to backend:', error);
-      // Fallback simulation if backend server is offline
-      setTimeout(() => {
-        setIsSubmitted(true);
-        setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-      }, 1000);
+      console.error('Error submitting contact form:', error);
+      alert('Error sending message. Please check your connection and try again.');
     } finally {
       setIsLoading(false);
     }
@@ -90,14 +96,14 @@ const ContactPage = () => {
                 <FaEnvelope />
               </div>
               <h4>Email Us</h4>
-              <a href="mailto:kq.malik400@gmail.com">kq.malik400@gmail.com</a>
+              <a href="mailto:kq.malik400@gmail.com">kq.malik400@gmail.com <br />medinshealthcare@gmail.com</a>
             </div>
             <div className="contact-info-card">
               <div className="contact-info-icon">
                 <FaMapMarkerAlt />
               </div>
               <h4>Visit Us</h4>
-              <p>street#26-A, Extension Chaklala scheme III,<br/>Rawalpindi, Pakistan</p>
+              <p>street#26-A, Extension Chaklala scheme III,<br />Rawalpindi, Pakistan</p>
             </div>
             <div className="contact-info-card">
               <div className="contact-info-icon">
@@ -232,13 +238,13 @@ const ContactPage = () => {
               <div className="contact-map-card">
                 <h4>Our Location</h4>
                 <div className="map-container" style={{ width: '100%', height: '220px', borderRadius: '8px', overflow: 'hidden' }}>
-                  <iframe 
-                    src="https://maps.google.com/maps?q=33.584333,73.090333&z=16&output=embed" 
-                    width="100%" 
-                    height="100%" 
-                    style={{ border: 0 }} 
-                    allowFullScreen="" 
-                    loading="lazy" 
+                  <iframe
+                    src="https://maps.google.com/maps?q=33.584333,73.090333&z=16&output=embed"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     title="Medins Healthcare Location"
                   ></iframe>
