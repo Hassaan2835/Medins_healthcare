@@ -124,7 +124,10 @@ const ProductDetailPage = () => {
   };
 
   const seoTitle = `${product.name} — ${product.type} | Medins Healthcare`;
-  const seoDescription = `${product.description} Packaged in ${product.packaging}. DRAP Enlistment: ${product.enlistment || 'WHO-GMP Compliant'}`;
+  let seoDescription = `${product.description} Packaged in ${product.packaging}.`;
+  if (seoDescription.length > 155) {
+    seoDescription = seoDescription.substring(0, 152) + '...';
+  }
   const seoKeywords = `${product.name}, ${product.type}, ${product.category}, Medins products, DRAP certified, ingredients: ${product.composition.map(c => c.ingredient).join(', ')}`;
 
   return (

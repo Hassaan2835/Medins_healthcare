@@ -69,7 +69,7 @@ const AboutPage = () => {
     <>
       <SEO 
         title="About Us — Our Story & Healthcare Excellence | Medins Healthcare"
-        description="Learn about Medins Healthcare's mission, vision, and our journey to becoming a trusted WHO-certified and GMP-compliant manufacturer of nutraceuticals in Pakistan."
+        description="Learn about Medins Healthcare's journey to becoming a trusted WHO-certified and GMP-compliant manufacturer of quality nutraceuticals in Pakistan."
         keywords="about Medins Healthcare, company history, nutraceutical company mission, healthcare excellence, quality assurance, GMP nutraceuticals, WHO certified manufacturer, Rawalpindi"
         canonicalUrl="https://medinshealthcare.com/about"
         schema={aboutSchema}

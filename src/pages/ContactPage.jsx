@@ -106,7 +106,7 @@ const ContactPage = () => {
     <>
       <SEO 
         title="Contact Us — Get in Touch with Our Team | Medins Healthcare"
-        description="Contact Medins Healthcare for general inquiries, product information, distribution partnerships, and export options. Located in Chaklala Scheme III, Rawalpindi."
+        description="Contact Medins Healthcare for inquiries, partnerships, and exports. Located in Chaklala Scheme III, Rawalpindi."
         keywords="contact Medins Healthcare, Rawalpindi office address, Medins phone number, Medins email, wholesale nutraceuticals partnership, export inquiry Pakistan"
         canonicalUrl="https://medinshealthcare.com/contact"
         schema={contactSchema}

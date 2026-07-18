@@ -45,7 +45,7 @@ const ProductsPage = () => {
     <>
       <SEO 
         title="Product Portfolio — Certified Nutraceuticals | Medins Healthcare"
-        description="Browse the comprehensive list of WHO-certified and GMP-compliant health supplements, chewable tablets, syrups, and sachets manufactured by Medins Healthcare."
+        description="Browse our portfolio of WHO-certified and GMP-compliant health supplements, chewable tablets, syrups, and sachets manufactured by Medins Healthcare."
         keywords="nutraceutical products, dietary supplements list, CADRIL syrup, 3D3 STAT, CALENCE, FOLICO tablets, J-REX, OSSICARE, vitamin D3 Pakistan, multivitamin syrup"
         canonicalUrl="https://medinshealthcare.com/products"
         schema={collectionSchema}

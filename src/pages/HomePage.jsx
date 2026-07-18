@@ -68,7 +68,7 @@ const HomePage = () => {
     <>
       <SEO 
         title="Medins Healthcare — Trusted Nutraceutical Manufacturing & Export"
-        description="Medins Healthcare is a leading WHO-certified, GMP-compliant nutraceutical manufacturer in Pakistan, delivering high-quality dietary supplements, tablets, syrups, and sachets."
+        description="Medins Healthcare is a leading WHO-certified, GMP-compliant nutraceutical manufacturer in Pakistan, delivering high-quality supplements, tablets, and syrups."
         keywords="Medins Healthcare, nutraceutical manufacturer, dietary supplements, WHO certified, GMP, tablets, syrups, sachets, Rawalpindi healthcare, Pakistan nutraceuticals"
         canonicalUrl="https://medinshealthcare.com"
         schema={homeSchema}
