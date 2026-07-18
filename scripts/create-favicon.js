@@ -13,7 +13,7 @@ async function createFavicon() {
     // Crop width to 300px to fully cut off the "M" of Medins
     await sharp(logoPath)
       .extract({ left: 0, top: 0, width: 300, height: 292 })
-      .resize(256, 256, { 
+      .resize(192, 192, { 
         fit: 'contain', 
         background: { r: 255, g: 255, b: 255, alpha: 0 } 
       })
