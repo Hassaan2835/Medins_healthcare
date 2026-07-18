@@ -1,12 +1,12 @@
 export const products = [
-  { 
-    id: 1, 
-    name: '3D3 STAT Chewable Tablets', 
-    category: 'tablets', 
-    type: 'Nutraceutical / Vitamin D3', 
+  {
+    id: 1,
+    name: '3D3 STAT Chewable Tablets',
+    category: 'tablets',
+    type: 'Nutraceutical / Vitamin D3',
     description: 'High-strength Vitamin D3 10000IU chewable tablets to adjust your Vitamin D3 levels according to your needs.',
     image: '/images/products/3D3 Tablets.png',
-    price: 1200,
+    price: 1390,
     composition: [
       { ingredient: 'Vitamin D-3 (as Cholecalciferol) (USP)', strength: '10000IU' }
     ],
@@ -23,14 +23,14 @@ export const products = [
     packaging: '30 Chewable Tablets',
     enlistment: 'DRAP Enlistment No. 0060'
   },
-  { 
-    id: 2, 
-    name: 'BIOMAK Syrup', 
-    category: 'syrups', 
-    type: 'Nutraceutical', 
+  {
+    id: 2,
+    name: 'BIOMAK Syrup',
+    category: 'syrups',
+    type: 'Nutraceutical',
     description: 'High-quality multivitamin and nutritional syrup for daily health and energy.',
     image: '/images/products/BIOMAK Syrup.png',
-    price: 850,
+    price: 625,
     composition: [
       { ingredient: 'Vitamin C (USP)', strength: '15mg' },
       { ingredient: 'Vitamin D3 (USP)', strength: '400IU' },
@@ -54,14 +54,14 @@ export const products = [
     packaging: '240ml Syrup',
     enlistment: 'DRAP Enlistment No. 0060 | Prod. E. No. 0060740562'
   },
-  { 
-    id: 3, 
-    name: 'CADRIL', 
-    category: 'syrups', 
-    type: 'Cardiovascular / Bone Health', 
+  {
+    id: 3,
+    name: 'CADRIL Syrup',
+    category: 'syrups',
+    type: 'Cardiovascular / Bone Health',
     description: 'Calcium Magnesium Zinc & Vitamin D3 suspension to help maintain strong bones.',
     image: '/images/products/CADRIL.png',
-    price: 950,
+    price: 765,
     composition: [
       { ingredient: 'Calcium Carbonate (USP)', strength: '750mg' },
       { ingredient: 'Magnesium (as magnesium oxide) (USP)', strength: '150mg' },
@@ -81,14 +81,14 @@ export const products = [
     packaging: '120ml Suspension',
     enlistment: 'DRAP Enlistment No. 0060 | P.Enlistment No. 00600020'
   },
-  { 
-    id: 4, 
-    name: 'CALENCE Tablets', 
-    category: 'tablets', 
-    type: 'Nutraceutical / Bone Support', 
+  {
+    id: 4,
+    name: 'CALENCE Tablets',
+    category: 'tablets',
+    type: 'Nutraceutical / Bone Support',
     description: 'Calcium, Magnesium, Vitamin D3, and Zinc formula to maintain strong bones for men and women of all ages.',
     image: '/images/products/Calence Tablets.png',
-    price: 1100,
+    price: 1680,
     composition: [
       { ingredient: 'Calcium Carbonate (USP)', strength: '750mg' },
       { ingredient: 'Magnesium (USP)', strength: '100mg' },
@@ -107,11 +107,11 @@ export const products = [
     packaging: '30 Tablets',
     enlistment: 'DRAP Enlistment No. 0060 | Prod. E. No. 0060820863'
   },
-  { 
-    id: 5, 
-    name: 'FOLICO Tablets', 
-    category: 'tablets', 
-    type: 'Nutraceutical', 
+  {
+    id: 5,
+    name: 'FOLICO Tablets',
+    category: 'tablets',
+    type: 'Nutraceutical',
     description: 'Vitamin B12, B6, Folic Acid and Biotin chewable tablets to support muscles and nerves.',
     image: '/images/products/FOLICO Tablets.png',
     price: 1350,
@@ -133,14 +133,14 @@ export const products = [
     packaging: '30 Chewable Tablets',
     enlistment: 'DRAP Enlistment No. 0060 | Prod.E. No. 0060660161 | M.R.P. RS: 1350/-'
   },
-  { 
-    id: 6, 
-    name: 'IROMIK Syrup', 
-    category: 'syrups', 
-    type: 'Nutraceutical', 
+  {
+    id: 6,
+    name: 'IROMIK Syrup',
+    category: 'syrups',
+    type: 'Nutraceutical',
     description: 'Iron supplement syrup for treatment and prevention of iron deficiency anemia.',
     image: '/images/products/IROMIK Syrup.png',
-    price: 1050,
+    price: 760,
     composition: [
       { ingredient: 'Iron Bisglycinate (JECFA)', strength: '158mg' },
       { ingredient: 'Folic Acid (USP)', strength: '400mcg' },
@@ -156,17 +156,17 @@ export const products = [
     ],
     dosage: 'Children: 1-2 teaspoonfuls daily. Adults: 1-2 tablespoonfuls daily. Or as directed by the physician. (Shake well before use)',
     storage: 'Store below 25°C. Protect from direct sunlight, heat & moisture. Keep out of reach of children.',
-    packaging: '120ml Syrup',
+    packaging: '240ml Syrup',
     enlistment: 'DRAP Enlistment No. 0060 | P.Enlistment No. 0060980316'
   },
-  { 
-    id: 7, 
-    name: 'OSI K2 Tablets', 
-    category: 'tablets', 
-    type: 'Nutraceutical / Neuromuscular', 
+  {
+    id: 7,
+    name: 'OSIK2 Tablets',
+    category: 'tablets',
+    type: 'Nutraceutical / Neuromuscular',
     description: 'Maximum strength Bone Health Formula combining Calcium, Vitamin D3, Magnesium, Zinc and Vitamin K2.',
     image: '/images/products/OSIK2.jpeg',
-    price: 1800,
+    price: 660,
     composition: [
       { ingredient: 'Calcium Carbonate (USP)', strength: '600mg' },
       { ingredient: 'Vitamin D3 (USP)', strength: '10mcg (400IU)' },
@@ -186,14 +186,14 @@ export const products = [
     packaging: '30 Tablets',
     enlistment: 'DRAP Enlistment No. 0060 | P.Enlistment No. 0060740564'
   },
-  { 
-    id: 8, 
-    name: 'J-REX Sachet', 
-    category: 'sachets', 
-    type: 'Nutraceutical / Joint Support', 
+  {
+    id: 8,
+    name: 'J-REX Sachet',
+    category: 'sachets',
+    type: 'Nutraceutical / Joint Support',
     description: 'Sugar-free Fish Collagen and Curcuma Longa sachet for bone, cartilage, and joint strength.',
     image: '/images/products/J-REX Sachet.png',
-    price: 2200,
+    price: 2190,
     composition: [
       { ingredient: 'Fish Collagen (MS)', strength: '4gm (4000mg)' },
       { ingredient: 'Curcuma Longa Ext (USP)', strength: '250mg' }
@@ -209,14 +209,14 @@ export const products = [
     packaging: '10 Sachets',
     enlistment: 'DRAP Enlistment No. 014321220147'
   },
-  { 
-    id: 9, 
-    name: 'OSSICARE Tablets', 
-    category: 'tablets', 
-    type: 'Nutraceutical', 
+  {
+    id: 9,
+    name: 'OSSICARE Tablets',
+    category: 'tablets',
+    type: 'Nutraceutical',
     description: 'Advanced formula tablets for joint cartilage support and bone strength.',
     image: '/images/products/OSSICARE Tablets.png',
-    price: 1650,
+    price: 1370,
     composition: [
       { ingredient: 'Calcium Carbonate (USP)', strength: '500mg' },
       { ingredient: 'Vitamin D3 (USP)', strength: '400IU' },
@@ -224,7 +224,7 @@ export const products = [
       { ingredient: 'Zinc Sulphate (USP)', strength: '10mg' },
       { ingredient: 'Copper Sulphate (USP)', strength: '1mg' },
       { ingredient: 'Manganese Sulphate (USP)', strength: '0.5mg' },
-      { ingredient: 'Sodium Selenium (USP)', strength: '500mcg' },
+      { ingredient: 'Sodium Selenium (USP)', strength: '50mcg' },
       { ingredient: 'Boron Citrate (USP)', strength: '0.6mg' }
     ],
     benefits: [
