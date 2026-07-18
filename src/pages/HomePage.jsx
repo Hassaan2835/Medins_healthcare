@@ -59,7 +59,7 @@ const HomePage = () => {
           "opens": "09:00",
           "closes": "18:00"
         },
-        "knowsAbout": ["Nutraceutical Manufacturing", "Dietary Supplements", "WHO Certified GMP Manufacturing"]
+        "knowsAbout": ["Nutraceutical Products", "Dietary Supplements", "WHO Certified GMP Standards"]
       }
     ]
   };
@@ -67,9 +67,9 @@ const HomePage = () => {
   return (
     <>
       <SEO 
-        title="Medins Healthcare — Trusted Nutraceutical Manufacturing & Export"
-        description="Medins Healthcare is a leading WHO-certified, GMP-compliant nutraceutical manufacturer in Pakistan, delivering high-quality supplements, tablets, and syrups."
-        keywords="Medins Healthcare, nutraceutical manufacturer, dietary supplements, WHO certified, GMP, tablets, syrups, sachets, Rawalpindi healthcare, Pakistan nutraceuticals"
+        title="Medins Healthcare — Trusted Nutraceutical Company"
+        description="Medins Healthcare is a leading WHO-certified, GMP-compliant nutraceutical company in Pakistan, delivering high-quality supplements, tablets, and syrups."
+        keywords="Medins Healthcare, nutraceutical company, dietary supplements, WHO certified, GMP, tablets, syrups, sachets, Rawalpindi healthcare, Pakistan nutraceuticals"
         canonicalUrl="https://medinshealthcare.com"
         schema={homeSchema}
       />

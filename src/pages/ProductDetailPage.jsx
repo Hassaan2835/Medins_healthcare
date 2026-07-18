@@ -99,7 +99,7 @@ const ProductDetailPage = () => {
             "name": `What is ${product.name}?`,
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": `${product.name} is a high-grade ${product.type} formulation manufactured by Medins Healthcare under WHO-certified and cGMP-compliant standards.`
+              "text": `${product.name} is a high-grade ${product.type} formulation distributed by Medins Healthcare under WHO-certified and cGMP-compliant standards.`
             }
           },
           {
@@ -332,9 +332,9 @@ const ProductDetailPage = () => {
             <div className="faq-item-card" style={{ padding: '24px', background: '#f8fafc', borderRadius: '12px', borderLeft: '4px solid #143068' }}>
               <h3 style={{ fontSize: '18px', color: '#143068', marginBottom: '12px', fontWeight: '600' }}>What is {product.name}?</h3>
               <p style={{ color: '#475569', lineHeight: '1.6', fontSize: '15px', margin: 0 }}>
-                {product.name} is a high-grade {product.type} formulation manufactured by Medins Healthcare. 
+                {product.name} is a high-grade {product.type} formulation distributed by Medins Healthcare. 
                 It is designed to support patient health by delivering precise therapeutic strengths of active ingredients, 
-                adhering to WHO-certified and cGMP-compliant manufacturing specifications.
+                adhering to WHO-certified and cGMP-compliant quality standards.
               </p>
             </div>
 

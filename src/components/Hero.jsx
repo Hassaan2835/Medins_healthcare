@@ -32,7 +32,7 @@ const Hero = () => {
           </h1>
 
           <p className="hero-description animate-fadeInUp delay-2">
-            Leading nutraceutical manufacturer and distributor delivering
+            Leading nutraceutical company delivering
             WHO-certified, high-quality healthcare products all over Pakistan. We care for your health.
           </p>
           

@@ -31,7 +31,7 @@ const Products = ({ limit }) => {
             Comprehensive <span>Product Portfolio</span>
           </h2>
           <p className="section-description">
-            Explore our range of WHO-certified tablets, syrups, and sachets manufactured to international standards.
+            Explore our range of WHO-certified tablets, syrups, and sachets formulated to international standards.
           </p>
         </div>
 

@@ -13,7 +13,7 @@ const features = [
   {
     icon: <FaHeartbeat />,
     title: 'Premium Quality',
-    description: 'All products manufactured under strict GMP guidelines with WHO certification ensuring the highest quality standards.'
+    description: 'All products sourced under strict GMP guidelines with WHO certification ensuring the highest quality standards.'
   },
   {
     icon: <FaTruck />,
@@ -101,21 +101,21 @@ const About = () => {
             </h2>
             <p className="about-description">
               Established in 2015, <strong>Medins Healthcare</strong> is a leading nutraceutical 
-              company specializing in the manufacturing and distribution of high-quality 
-              healthcare products. We are committed to improving health standards by providing 
-              affordable, WHO-certified nutraceuticals and supplements.
+              company specializing in high-quality healthcare products. We are committed to 
+              improving health standards by providing affordable, WHO-certified nutraceuticals 
+              and supplements.
             </p>
             <p className="about-description">
-              Our nutraceuticals and supplements are manufactured in our state-of-the-art 
-              GMP-compliant facility in Pakistan. With our growing portfolio spanning 
-              tablets, capsules, syrups, injectables, creams, and medical disposables, we serve 
-              hospitals, pharmacies, clinics, and distributors all over Pakistan.
+              Our nutraceuticals and supplements meet state-of-the-art GMP-compliant standards. 
+              With our growing portfolio spanning tablets, capsules, syrups, injectables, creams, 
+              and medical disposables, we serve hospitals, pharmacies, clinics, and distributors 
+              all over Pakistan.
             </p>
 
             <div className="about-highlights">
               <div className="about-highlight-item">
                 <div className="highlight-dot"></div>
-                <span>WHO-GMP Certified Manufacturing</span>
+                <span>WHO-GMP Certified Products</span>
               </div>
               <div className="about-highlight-item">
                 <div className="highlight-dot"></div>
@@ -137,7 +137,7 @@ const About = () => {
               <div className="about-img-card about-img-1">
                 <div className="about-img-placeholder">
                   <span><FaIndustry /></span>
-                  <p>Manufacturing Facility</p>
+                  <p>Quality Standards</p>
                 </div>
               </div>
               <div className="about-img-card about-img-2">

@@ -25,7 +25,7 @@ const VisionMission = () => {
             <h3 className="vm-card-title">Our Vision</h3>
             <div className="vm-card-divider"></div>
             <p className="vm-card-text">
-              To become a trusted leader in nutraceutical manufacturing, 
+              To become a trusted leader in nutraceutical products, 
               recognized for uncompromising quality, continuous innovation, and delivering 
               accessible healthcare solutions that improve lives.
             </p>

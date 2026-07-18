@@ -52,7 +52,7 @@ const AboutPage = () => {
       "name": "Medins Healthcare",
       "url": "https://medinshealthcare.com",
       "logo": "https://medinshealthcare.com/logo.png",
-      "description": "Medins Healthcare is a premier nutraceutical manufacturing and distribution company based in Pakistan. Specializing in WHO-certified GMP compliant dietary supplements.",
+      "description": "Medins Healthcare is a premier nutraceutical company based in Pakistan. Specializing in WHO-certified GMP compliant dietary supplements.",
       "foundingDate": "2015",
       "address": {
         "@type": "PostalAddress",
@@ -69,8 +69,8 @@ const AboutPage = () => {
     <>
       <SEO 
         title="About Us — Our Story & Healthcare Excellence | Medins Healthcare"
-        description="Learn about Medins Healthcare's journey to becoming a trusted WHO-certified and GMP-compliant manufacturer of quality nutraceuticals in Pakistan."
-        keywords="about Medins Healthcare, company history, nutraceutical company mission, healthcare excellence, quality assurance, GMP nutraceuticals, WHO certified manufacturer, Rawalpindi"
+        description="Learn about Medins Healthcare's journey to becoming a trusted WHO-certified and GMP-compliant nutraceutical company in Pakistan."
+        keywords="about Medins Healthcare, company history, nutraceutical company mission, healthcare excellence, quality assurance, GMP nutraceuticals, WHO certified company, Rawalpindi"
         canonicalUrl="https://medinshealthcare.com/about"
         schema={aboutSchema}
       />
@@ -98,16 +98,15 @@ const AboutPage = () => {
               <span className="section-subtitle">Who We Are</span>
               <h2 className="section-title">A Trusted Name in <span>Healthcare</span></h2>
               <p>
-                <strong>Medins Healthcare</strong> is a premier nutraceutical manufacturing and 
-                distribution company based in Pakistan. Since our establishment in 2015, we have 
-                grown into a recognized healthcare solutions provider.
+                <strong>Medins Healthcare</strong> is a premier nutraceutical company based in 
+                Pakistan. Since our establishment in 2015, we have grown into a recognized 
+                healthcare solutions provider.
               </p>
               <p>
-                We specialize in the manufacturing and distribution of a comprehensive range 
-                of nutraceutical products including tablets, capsules, syrups, 
-                creams, ointments, and medical disposables. Our products 
-                are manufactured in state-of-the-art GMP-compliant facilities and meet the 
-                highest quality standards.
+                We specialize in the distribution of a comprehensive range of nutraceutical 
+                products including tablets, capsules, syrups, creams, ointments, and medical 
+                disposables. Our products are sourced from state-of-the-art GMP-compliant 
+                facilities and meet the highest quality standards.
               </p>
               <p>
                 With our distribution network spanning across Pakistan, we have established ourselves 
