@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { FaHeartbeat, FaTruck, FaFlask, FaAward, FaUsers, FaGlobeAmericas, FaBoxOpen, FaCalendarCheck, FaCheckCircle, FaCertificate, FaIndustry, FaHandshake } from 'react-icons/fa';
 import './AboutPage.css';
+import SEO from '../components/SEO';
 
 const timeline = [
   { year: '2015', title: 'Company Founded', description: 'Medins Healthcare established with a vision to deliver quality nutraceutical products.' },
@@ -43,8 +44,36 @@ const AboutPage = () => {
     return () => observers.forEach(o => o.disconnect());
   }, []);
 
+  const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Medins Healthcare",
+      "url": "https://medinshealthcare.com",
+      "logo": "https://medinshealthcare.com/logo.png",
+      "description": "Medins Healthcare is a premier nutraceutical manufacturing and distribution company based in Pakistan. Specializing in WHO-certified GMP compliant dietary supplements.",
+      "foundingDate": "2015",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "street#26-A, Extension Chaklala scheme III",
+        "addressLocality": "Rawalpindi",
+        "addressRegion": "Punjab",
+        "postalCode": "46000",
+        "addressCountry": "PK"
+      }
+    }
+  };
+
   return (
     <>
+      <SEO 
+        title="About Us — Our Story & Healthcare Excellence | Medins Healthcare"
+        description="Learn about Medins Healthcare's mission, vision, and our journey to becoming a trusted WHO-certified and GMP-compliant manufacturer of nutraceuticals in Pakistan."
+        keywords="about Medins Healthcare, company history, nutraceutical company mission, healthcare excellence, quality assurance, GMP nutraceuticals, WHO certified manufacturer, Rawalpindi"
+        canonicalUrl="https://medinshealthcare.com/about"
+        schema={aboutSchema}
+      />
       {/* Page Hero */}
       <section className="page-hero">
         <div className="page-hero-bg">

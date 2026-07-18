@@ -55,7 +55,13 @@ const Products = ({ limit }) => {
             <Link to={`/product/${product.id}`} className="product-card" key={product.id}>
               {product.image ? (
                 <div className="product-card-image-wrapper">
-                  <img src={product.image} alt={product.name} className="product-card-img" />
+                  <img 
+                    src={product.image} 
+                    alt={`${product.name} - ${product.type} Supplement by Medins Healthcare`} 
+                    title={`${product.name} - Medins Healthcare`}
+                    loading="lazy" 
+                    className="product-card-img" 
+                  />
                   <div className="product-type-badge">{product.type}</div>
                 </div>
               ) : (

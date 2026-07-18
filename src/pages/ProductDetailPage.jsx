@@ -4,6 +4,8 @@ import { products } from '../data/productsData';
 import { FaTablets, FaPrescriptionBottleAlt, FaVials, FaPills, FaArrowLeft, FaInfoCircle, FaClipboardList, FaFilePrescription, FaShieldAlt, FaTimes } from 'react-icons/fa';
 import './ProductDetailPage.css';
 
+import SEO from '../components/SEO';
+
 const categories = [
   { id: 'all', name: 'All Products', icon: <FaPills /> },
   { id: 'tablets', name: 'Tablets', icon: <FaTablets /> },
@@ -43,8 +45,98 @@ const ProductDetailPage = () => {
     });
   };
 
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Product",
+        "@id": `https://medinshealthcare.com/product/${product.id}#product`,
+        "name": product.name,
+        "image": `https://medinshealthcare.com${product.image}`,
+        "description": product.description,
+        "brand": {
+          "@type": "Brand",
+          "name": "Medins Healthcare"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": product.price,
+          "priceCurrency": "PKR",
+          "availability": "https://schema.org/InStock",
+          "url": `https://medinshealthcare.com/product/${product.id}`
+        },
+        "category": product.category,
+        "manufacturer": {
+          "@type": "Organization",
+          "name": "Medins Healthcare",
+          "url": "https://medinshealthcare.com"
+        },
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "DRAP Credentials",
+            "value": product.enlistment || "WHO-GMP Certified"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Packaging",
+            "value": product.packaging
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "@id": `https://medinshealthcare.com/product/${product.id}#image`,
+        "url": `https://medinshealthcare.com${product.image}`,
+        "caption": `${product.name} - ${product.type} by Medins Healthcare`
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `https://medinshealthcare.com/product/${product.id}#faq`,
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": `What is ${product.name}?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `${product.name} is a high-grade ${product.type} formulation manufactured by Medins Healthcare under WHO-certified and cGMP-compliant standards.`
+            }
+          },
+          {
+            "@type": "Question",
+            "name": `What are the active ingredients in ${product.name}?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `The composition of ${product.name} features: ${product.composition.map(c => `${c.ingredient} (${c.strength})`).join(', ')}.`
+            }
+          },
+          {
+            "@type": "Question",
+            "name": `What are the health benefits of ${product.name}?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `Primary health benefits include: ${product.benefits.slice(0, 3).join('. ')}.`
+            }
+          }
+        ]
+      }
+    ]
+  };
+
+  const seoTitle = `${product.name} — ${product.type} | Medins Healthcare`;
+  const seoDescription = `${product.description} Packaged in ${product.packaging}. DRAP Enlistment: ${product.enlistment || 'WHO-GMP Compliant'}`;
+  const seoKeywords = `${product.name}, ${product.type}, ${product.category}, Medins products, DRAP certified, ingredients: ${product.composition.map(c => c.ingredient).join(', ')}`;
+
   return (
-    <div className="product-detail-page section">
+    <article className="product-detail-page section">
+      <SEO 
+        title={seoTitle}
+        description={seoDescription}
+        keywords={seoKeywords}
+        canonicalUrl={`https://medinshealthcare.com/product/${product.id}`}
+        ogImage={`https://medinshealthcare.com${product.image}`}
+        schema={productSchema}
+      />
       <div className="container">
         {/* Breadcrumb Navigation */}
         <div className="breadcrumb-nav">
@@ -60,7 +152,13 @@ const ProductDetailPage = () => {
           <div className="product-detail-visual">
             <div className="product-detail-img-card" onClick={() => setIsLightboxOpen(true)} style={{ cursor: 'pointer' }}>
               {product.image ? (
-                <img src={product.image} alt={product.name} className="product-detail-img" />
+                <img 
+                  src={product.image} 
+                  alt={`${product.name} - ${product.type} by Medins Healthcare`} 
+                  title={`${product.name} - Packaging: ${product.packaging}`}
+                  loading="eager"
+                  className="product-detail-img" 
+                />
               ) : (
                 <div className="product-detail-img-placeholder">
                   <span className="placeholder-icon">{categoryInfo?.icon || <FaPills />}</span>
@@ -213,6 +311,65 @@ const ProductDetailPage = () => {
             </div>
           </div>
         </div>
+
+        {/* AEO/GEO Optimized Informative Article & FAQ Section */}
+        <hr className="detail-section-divider" style={{ margin: '60px 0 40px 0', opacity: 0.15 }} />
+        
+        <section className="aeo-faq-article" aria-label="Product Insights and FAQ">
+          <header className="aeo-article-header">
+            <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '20px' }}>
+              Frequently Asked Questions &amp; <span>Product Insights</span>
+            </h2>
+            <p className="section-description" style={{ margin: '0 0 40px 0', textAlign: 'left', maxWidth: '800px' }}>
+              Expert information and detailed guidance on the clinical utility, composition, and correct administration of {product.name}.
+            </p>
+          </header>
+
+          <div className="aeo-faq-grid" style={{ display: 'grid', gap: '30px', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
+            <div className="faq-item-card" style={{ padding: '24px', background: '#f8fafc', borderRadius: '12px', borderLeft: '4px solid #143068' }}>
+              <h3 style={{ fontSize: '18px', color: '#143068', marginBottom: '12px', fontWeight: '600' }}>What is {product.name}?</h3>
+              <p style={{ color: '#475569', lineHeight: '1.6', fontSize: '15px', margin: 0 }}>
+                {product.name} is a high-grade {product.type} formulation manufactured by Medins Healthcare. 
+                It is designed to support patient health by delivering precise therapeutic strengths of active ingredients, 
+                adhering to WHO-certified and cGMP-compliant manufacturing specifications.
+              </p>
+            </div>
+
+            <div className="faq-item-card" style={{ padding: '24px', background: '#f8fafc', borderRadius: '12px', borderLeft: '4px solid #143068' }}>
+              <h3 style={{ fontSize: '18px', color: '#143068', marginBottom: '12px', fontWeight: '600' }}>What are the active ingredients in {product.name}?</h3>
+              <p style={{ color: '#475569', lineHeight: '1.6', fontSize: '15px', margin: 0 }}>
+                The composition of {product.name} features:
+                <ul style={{ margin: '8px 0 0 20px', padding: 0 }}>
+                  {product.composition.map((comp, idx) => (
+                    <li key={idx} style={{ marginBottom: '4px' }}>
+                      <strong>{comp.ingredient}</strong> ({comp.strength})
+                    </li>
+                  ))}
+                </ul>
+              </p>
+            </div>
+
+            <div className="faq-item-card" style={{ padding: '24px', background: '#f8fafc', borderRadius: '12px', borderLeft: '4px solid #143068' }}>
+              <h3 style={{ fontSize: '18px', color: '#143068', marginBottom: '12px', fontWeight: '600' }}>What are the primary health benefits of {product.name}?</h3>
+              <p style={{ color: '#475569', lineHeight: '1.6', fontSize: '15px', margin: 0 }}>
+                Key therapeutic benefits include:
+                <ul style={{ margin: '8px 0 0 20px', padding: 0 }}>
+                  {product.benefits.slice(0, 3).map((benefit, idx) => (
+                    <li key={idx} style={{ marginBottom: '4px' }}>{benefit}</li>
+                  ))}
+                </ul>
+              </p>
+            </div>
+
+            <div className="faq-item-card" style={{ padding: '24px', background: '#f8fafc', borderRadius: '12px', borderLeft: '4px solid #143068' }}>
+              <h3 style={{ fontSize: '18px', color: '#143068', marginBottom: '12px', fontWeight: '600' }}>How should {product.name} be administered?</h3>
+              <p style={{ color: '#475569', lineHeight: '1.6', fontSize: '15px', margin: 0 }}>
+                {product.dosage} Always consult your doctor or registered medical practitioner for advice tailormade to your physical profile. 
+                Store the product {product.storage.toLowerCase()}.
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
 
       {/* Lightbox Overlay Modal */}
@@ -232,7 +389,7 @@ const ProductDetailPage = () => {
           </div>
         </div>
       )}
-    </div>
+    </article>
   );
 };
 

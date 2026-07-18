@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock, FaWhatsapp, FaPaperPlane, FaCheckCircle } from 'react-icons/fa';
 import './ContactPage.css';
+import SEO from '../components/SEO';
 
 const ContactPage = () => {
   const location = useLocation();
@@ -62,8 +63,54 @@ const ContactPage = () => {
     }
   };
 
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "mainEntity": {
+      "@type": "MedicalBusiness",
+      "name": "Medins Healthcare",
+      "image": "https://medinshealthcare.com/logo.png",
+      "url": "https://medinshealthcare.com",
+      "telephone": "+923325434674",
+      "email": "kq.malik400@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "street#26-A, Extension Chaklala scheme III",
+        "addressLocality": "Rawalpindi",
+        "addressRegion": "Punjab",
+        "postalCode": "46000",
+        "addressCountry": "PK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 33.584333,
+        "longitude": 73.090333
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    }
+  };
+
   return (
     <>
+      <SEO 
+        title="Contact Us — Get in Touch with Our Team | Medins Healthcare"
+        description="Contact Medins Healthcare for general inquiries, product information, distribution partnerships, and export options. Located in Chaklala Scheme III, Rawalpindi."
+        keywords="contact Medins Healthcare, Rawalpindi office address, Medins phone number, Medins email, wholesale nutraceuticals partnership, export inquiry Pakistan"
+        canonicalUrl="https://medinshealthcare.com/contact"
+        schema={contactSchema}
+      />
       {/* Page Hero */}
       <section className="page-hero">
         <div className="page-hero-bg">
