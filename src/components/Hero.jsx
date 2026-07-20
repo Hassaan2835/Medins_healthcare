@@ -26,6 +26,9 @@ const Hero = () => {
           </div>
 
           <h1 className="hero-title animate-fadeInUp">
+            <span style={{ display: 'block', fontSize: '0.45em', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '12px', color: 'rgba(255, 255, 255, 0.7)', fontWeight: '600' }}>
+              Medins Healthcare
+            </span>
             Your Trusted Partner in{' '}
             <span className="hero-title-gradient">Healthcare</span>{' '}
             <span className="hero-title-gradient">Excellence</span>

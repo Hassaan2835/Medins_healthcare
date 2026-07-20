@@ -69,8 +69,8 @@ const ContactPage = () => {
     "mainEntity": {
       "@type": "MedicalBusiness",
       "name": "Medins Healthcare",
-      "image": "https://medinshealthcare.com/logo.png",
-      "url": "https://medinshealthcare.com",
+      "image": "https://www.medinshealthcare.com/logo.png",
+      "url": "https://www.medinshealthcare.com",
       "telephone": "+923325434674",
       "email": "kq.malik400@gmail.com",
       "address": {
@@ -108,7 +108,7 @@ const ContactPage = () => {
         title="Contact Us — Get in Touch with Our Team | Medins Healthcare"
         description="Contact Medins Healthcare for inquiries and partnerships. Located in Chaklala Scheme III, Rawalpindi."
         keywords="contact Medins Healthcare, Rawalpindi office address, Medins phone number, Medins email, wholesale nutraceuticals partnership"
-        canonicalUrl="https://medinshealthcare.com/contact"
+        canonicalUrl="https://www.medinshealthcare.com/contact"
         schema={contactSchema}
       />
       {/* Page Hero */}

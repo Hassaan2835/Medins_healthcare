@@ -50,9 +50,9 @@ const ProductDetailPage = () => {
     "@graph": [
       {
         "@type": "Product",
-        "@id": `https://medinshealthcare.com/product/${product.id}#product`,
+        "@id": `https://www.medinshealthcare.com/product/${product.id}#product`,
         "name": product.name,
-        "image": `https://medinshealthcare.com${product.image}`,
+        "image": `https://www.medinshealthcare.com${product.image}`,
         "description": product.description,
         "brand": {
           "@type": "Brand",
@@ -63,13 +63,13 @@ const ProductDetailPage = () => {
           "price": product.price,
           "priceCurrency": "PKR",
           "availability": "https://schema.org/InStock",
-          "url": `https://medinshealthcare.com/product/${product.id}`
+          "url": `https://www.medinshealthcare.com/product/${product.id}`
         },
         "category": product.category,
         "manufacturer": {
           "@type": "Organization",
           "name": "Medins Healthcare",
-          "url": "https://medinshealthcare.com"
+          "url": "https://www.medinshealthcare.com"
         },
         "additionalProperty": [
           {
@@ -86,13 +86,13 @@ const ProductDetailPage = () => {
       },
       {
         "@type": "ImageObject",
-        "@id": `https://medinshealthcare.com/product/${product.id}#image`,
-        "url": `https://medinshealthcare.com${product.image}`,
+        "@id": `https://www.medinshealthcare.com/product/${product.id}#image`,
+        "url": `https://www.medinshealthcare.com${product.image}`,
         "caption": `${product.name} - ${product.type} by Medins Healthcare`
       },
       {
         "@type": "FAQPage",
-        "@id": `https://medinshealthcare.com/product/${product.id}#faq`,
+        "@id": `https://www.medinshealthcare.com/product/${product.id}#faq`,
         "mainEntity": [
           {
             "@type": "Question",
@@ -136,8 +136,8 @@ const ProductDetailPage = () => {
         title={seoTitle}
         description={seoDescription}
         keywords={seoKeywords}
-        canonicalUrl={`https://medinshealthcare.com/product/${product.id}`}
-        ogImage={`https://medinshealthcare.com${product.image}`}
+        canonicalUrl={`https://www.medinshealthcare.com/product/${product.id}`}
+        ogImage={`https://www.medinshealthcare.com${product.image}`}
         schema={productSchema}
       />
       <div className="container">

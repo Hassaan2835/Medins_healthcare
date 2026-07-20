@@ -11,10 +11,10 @@ const HomePage = () => {
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://medinshealthcare.com/#organization",
+        "@id": "https://www.medinshealthcare.com/#organization",
         "name": "Medins Healthcare",
-        "url": "https://medinshealthcare.com",
-        "logo": "https://medinshealthcare.com/logo.png",
+        "url": "https://www.medinshealthcare.com",
+        "logo": "https://www.medinshealthcare.com/logo.png",
         "sameAs": [
           "https://www.linkedin.com/in/hassaankhanofficial/"
         ],
@@ -28,10 +28,10 @@ const HomePage = () => {
       },
       {
         "@type": "MedicalBusiness",
-        "@id": "https://medinshealthcare.com/#business",
+        "@id": "https://www.medinshealthcare.com/#business",
         "name": "Medins Healthcare",
-        "image": "https://medinshealthcare.com/logo.png",
-        "url": "https://medinshealthcare.com",
+        "image": "https://www.medinshealthcare.com/logo.png",
+        "url": "https://www.medinshealthcare.com",
         "telephone": "+923325434674",
         "address": {
           "@type": "PostalAddress",
@@ -70,7 +70,7 @@ const HomePage = () => {
         title="Medins Healthcare — Trusted Nutraceutical Company"
         description="Medins Healthcare is a leading WHO-certified, GMP-compliant nutraceutical company in Pakistan, delivering high-quality supplements, tablets, and syrups."
         keywords="Medins Healthcare, nutraceutical company, dietary supplements, WHO certified, GMP, tablets, syrups, sachets, Rawalpindi healthcare, Pakistan nutraceuticals"
-        canonicalUrl="https://medinshealthcare.com"
+        canonicalUrl="https://www.medinshealthcare.com"
         schema={homeSchema}
       />
       <Hero />

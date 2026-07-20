@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://medinshealthcare.com/sitemap.xml
+Sitemap: https://www.medinshealthcare.com/sitemap.xml

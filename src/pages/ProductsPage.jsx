@@ -8,7 +8,7 @@ const ProductsPage = () => {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Certified Nutraceutical Products | Medins Healthcare",
-    "url": "https://medinshealthcare.com/products",
+    "url": "https://www.medinshealthcare.com/products",
     "description": "Explore the full portfolio of WHO-certified and GMP-compliant health supplements distributed by Medins Healthcare.",
     "about": {
       "@type": "Organization",
@@ -23,8 +23,8 @@ const ProductsPage = () => {
         "item": {
           "@type": "Product",
           "name": product.name,
-          "url": `https://medinshealthcare.com/product/${product.id}`,
-          "image": `https://medinshealthcare.com${product.image}`,
+          "url": `https://www.medinshealthcare.com/product/${product.id}`,
+          "image": `https://www.medinshealthcare.com${product.image}`,
           "description": product.description,
           "brand": {
             "@type": "Brand",
@@ -47,7 +47,7 @@ const ProductsPage = () => {
         title="Product Portfolio — Certified Nutraceuticals | Medins Healthcare"
         description="Browse our portfolio of WHO-certified and GMP-compliant health supplements, chewable tablets, syrups, and sachets distributed by Medins Healthcare."
         keywords="nutraceutical products, dietary supplements list, CADRIL syrup, 3D3 STAT, CALENCE, FOLICO tablets, J-REX, OSSICARE, vitamin D3 Pakistan, multivitamin syrup"
-        canonicalUrl="https://medinshealthcare.com/products"
+        canonicalUrl="https://www.medinshealthcare.com/products"
         schema={collectionSchema}
       />
       {/* Page Hero */}

@@ -2,111 +2,111 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://medinshealthcare.com/</loc>
+    <loc>https://www.medinshealthcare.com/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://medinshealthcare.com/about</loc>
+    <loc>https://www.medinshealthcare.com/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://medinshealthcare.com/products</loc>
+    <loc>https://www.medinshealthcare.com/products</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://medinshealthcare.com/contact</loc>
+    <loc>https://www.medinshealthcare.com/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://medinshealthcare.com/product/1</loc>
+    <loc>https://www.medinshealthcare.com/product/1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://medinshealthcare.com/images/products/3D3%20Tablets.png</image:loc>
+      <image:loc>https://www.medinshealthcare.com/images/products/3D3%20Tablets.png</image:loc>
       <image:title>3D3 STAT Chewable Tablets</image:title>
       <image:caption>High-strength Vitamin D3 10000IU chewable tablets to adjust your Vitamin D3 levels according to your needs.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://medinshealthcare.com/product/2</loc>
+    <loc>https://www.medinshealthcare.com/product/2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://medinshealthcare.com/images/products/BIOMAK%20Syrup.png</image:loc>
+      <image:loc>https://www.medinshealthcare.com/images/products/BIOMAK%20Syrup.png</image:loc>
       <image:title>BIOMAK Syrup</image:title>
       <image:caption>High-quality multivitamin and nutritional syrup for daily health and energy.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://medinshealthcare.com/product/3</loc>
+    <loc>https://www.medinshealthcare.com/product/3</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://medinshealthcare.com/images/products/CADRIL.png</image:loc>
+      <image:loc>https://www.medinshealthcare.com/images/products/CADRIL.png</image:loc>
       <image:title>CADRIL Syrup</image:title>
       <image:caption>Calcium Magnesium Zinc &amp; Vitamin D3 suspension to help maintain strong bones.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://medinshealthcare.com/product/4</loc>
+    <loc>https://www.medinshealthcare.com/product/4</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://medinshealthcare.com/images/products/Calence%20Tablets.png</image:loc>
+      <image:loc>https://www.medinshealthcare.com/images/products/Calence%20Tablets.png</image:loc>
       <image:title>CALENCE Tablets</image:title>
       <image:caption>Calcium, Magnesium, Vitamin D3, and Zinc formula to maintain strong bones for men and women of all ages.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://medinshealthcare.com/product/5</loc>
+    <loc>https://www.medinshealthcare.com/product/5</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://medinshealthcare.com/images/products/FOLICO%20Tablets.png</image:loc>
+      <image:loc>https://www.medinshealthcare.com/images/products/FOLICO%20Tablets.png</image:loc>
       <image:title>FOLICO Tablets</image:title>
       <image:caption>Vitamin B12, B6, Folic Acid and Biotin chewable tablets to support muscles and nerves.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://medinshealthcare.com/product/6</loc>
+    <loc>https://www.medinshealthcare.com/product/6</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://medinshealthcare.com/images/products/IROMIK%20Syrup.png</image:loc>
+      <image:loc>https://www.medinshealthcare.com/images/products/IROMIK%20Syrup.png</image:loc>
       <image:title>IROMIK Syrup</image:title>
       <image:caption>Iron supplement syrup for treatment and prevention of iron deficiency anemia.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://medinshealthcare.com/product/7</loc>
+    <loc>https://www.medinshealthcare.com/product/7</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://medinshealthcare.com/images/products/OSIK2.jpeg</image:loc>
+      <image:loc>https://www.medinshealthcare.com/images/products/OSIK2.jpeg</image:loc>
       <image:title>OSIK2 Tablets</image:title>
       <image:caption>Maximum strength Bone Health Formula combining Calcium, Vitamin D3, Magnesium, Zinc and Vitamin K2.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://medinshealthcare.com/product/8</loc>
+    <loc>https://www.medinshealthcare.com/product/8</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://medinshealthcare.com/images/products/J-REX%20Sachet.png</image:loc>
+      <image:loc>https://www.medinshealthcare.com/images/products/J-REX%20Sachet.png</image:loc>
       <image:title>J-REX Sachet</image:title>
       <image:caption>Sugar-free Fish Collagen and Curcuma Longa sachet for bone, cartilage, and joint strength.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://medinshealthcare.com/product/9</loc>
+    <loc>https://www.medinshealthcare.com/product/9</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://medinshealthcare.com/images/products/OSSICARE%20Tablets.png</image:loc>
+      <image:loc>https://www.medinshealthcare.com/images/products/OSSICARE%20Tablets.png</image:loc>
       <image:title>OSSICARE Tablets</image:title>
       <image:caption>Advanced formula tablets for joint cartilage support and bone strength.</image:caption>
     </image:image>

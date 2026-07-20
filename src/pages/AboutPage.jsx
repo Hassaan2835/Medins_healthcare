@@ -50,8 +50,8 @@ const AboutPage = () => {
     "mainEntity": {
       "@type": "Organization",
       "name": "Medins Healthcare",
-      "url": "https://medinshealthcare.com",
-      "logo": "https://medinshealthcare.com/logo.png",
+      "url": "https://www.medinshealthcare.com",
+      "logo": "https://www.medinshealthcare.com/logo.png",
       "description": "Medins Healthcare is a premier nutraceutical company based in Pakistan. Specializing in WHO-certified GMP compliant dietary supplements.",
       "foundingDate": "2015",
       "address": {
@@ -71,7 +71,7 @@ const AboutPage = () => {
         title="About Us — Our Story & Healthcare Excellence | Medins Healthcare"
         description="Learn about Medins Healthcare's journey to becoming a trusted WHO-certified and GMP-compliant nutraceutical company in Pakistan."
         keywords="about Medins Healthcare, company history, nutraceutical company mission, healthcare excellence, quality assurance, GMP nutraceuticals, WHO certified company, Rawalpindi"
-        canonicalUrl="https://medinshealthcare.com/about"
+        canonicalUrl="https://www.medinshealthcare.com/about"
         schema={aboutSchema}
       />
       {/* Page Hero */}

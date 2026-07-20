@@ -6,7 +6,7 @@ import { products } from '../src/data/productsData.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const BASE_URL = 'https://medinshealthcare.com';
+const BASE_URL = 'https://www.medinshealthcare.com';
 
 const routes = [
   { url: '/', changefreq: 'daily', priority: 1.0 },
