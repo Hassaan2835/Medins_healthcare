@@ -10,6 +10,13 @@ const HomePage = () => {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": "https://www.medinshealthcare.com/#website",
+        "name": "Medins Healthcare",
+        "alternateName": ["Medins", "Medins Pakistan", "Medins Nutraceuticals"],
+        "url": "https://www.medinshealthcare.com"
+      },
+      {
         "@type": "Organization",
         "@id": "https://www.medinshealthcare.com/#organization",
         "name": "Medins Healthcare",
