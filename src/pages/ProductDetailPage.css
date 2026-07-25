@@ -452,6 +452,12 @@
   .product-actions-bar {
     flex-direction: column;
   }
+
+  .breadcrumb-nav {
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 0.8rem;
+  }
 }
 
 /* ============================================

@@ -10,6 +10,7 @@
   border-bottom: 1px solid rgba(255,255,255,0.08);
   position: relative;
   z-index: calc(var(--z-sticky) + 1);
+  overflow: hidden;
 }
 
 .top-bar-content {

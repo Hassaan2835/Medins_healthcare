@@ -360,3 +360,10 @@
     padding: 18px;
   }
 }
+
+@media (max-width: 480px) {
+  .about-stats {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

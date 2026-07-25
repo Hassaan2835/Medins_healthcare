@@ -328,7 +328,7 @@ const ProductDetailPage = () => {
             </p>
           </header>
 
-          <div className="aeo-faq-grid" style={{ display: 'grid', gap: '30px', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
+          <div className="aeo-faq-grid" style={{ display: 'grid', gap: '30px', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))' }}>
             <div className="faq-item-card" style={{ padding: '24px', background: '#f8fafc', borderRadius: '12px', borderLeft: '4px solid #143068' }}>
               <h3 style={{ fontSize: '18px', color: '#143068', marginBottom: '12px', fontWeight: '600' }}>What is {product.name}?</h3>
               <p style={{ color: '#475569', lineHeight: '1.6', fontSize: '15px', margin: 0 }}>

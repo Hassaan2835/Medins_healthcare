@@ -46,7 +46,7 @@ const Navbar = () => {
           </div>
           <div className="top-bar-right">
             <a href="https://wa.me/923325434674" className="top-bar-whatsapp" target="_blank" rel="noopener noreferrer">
-              <FaWhatsapp /> WhatsApp Us
+              <FaWhatsapp /> <span>WhatsApp Us</span>
             </a>
           </div>
         </div>

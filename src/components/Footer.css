@@ -328,14 +328,26 @@
    ============================================ */
 @media (max-width: 1024px) {
   .footer-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 36px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 40px;
+  }
+
+  .footer-about {
+    max-width: 100%;
+  }
+
+  .footer-links-group {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 32px;
   }
 }
 
 @media (max-width: 640px) {
-  .footer-grid {
-    grid-template-columns: 1fr;
+  .footer-links-group {
+    flex-direction: column;
     gap: 32px;
   }
 
