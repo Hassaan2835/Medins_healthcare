@@ -2,24 +2,102 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google-site-verification" content="zG677oTEfXC5FCauCz5oxzZ41cDlxni2WJhhCKM6SMk" />
-    <title>Medins Healthcare — Trusted Nutraceutical Company</title>
-    <meta name="description" content="Medins Healthcare is a leading nutraceutical company delivering WHO-certified, high-quality healthcare products." />
-    <meta name="keywords" content="nutraceutical, healthcare, supplements, WHO certified, GMP, tablets, capsules, syrups" />
-    <meta property="og:title" content="Medins Healthcare — Trusted Nutraceutical Company" />
-    <meta property="og:description" content="Leading nutraceutical company delivering WHO-certified healthcare products." />
+    <title>Medins Healthcare — Trusted Nutraceutical Company in Pakistan</title>
+    <meta name="description" content="Medins Healthcare is a leading WHO-certified, GMP-compliant nutraceutical company in Pakistan, delivering high-quality supplements, tablets, syrups, and sachets." />
+    <meta name="keywords" content="Medins, Medins Healthcare, Medins Pakistan, nutraceutical company, dietary supplements, WHO certified, GMP, tablets, capsules, syrups, Rawalpindi" />
+    <meta property="og:title" content="Medins Healthcare — Trusted Nutraceutical Company in Pakistan" />
+    <meta property="og:description" content="Medins Healthcare is a leading WHO-certified, GMP-compliant nutraceutical company in Pakistan, delivering high-quality supplements, tablets, syrups, and sachets." />
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#143068" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      /* Premium Splash Screen Styles */
+      .splash-screen-wrapper {
+        background-color: #0B1929;
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #ffffff;
+        margin: 0;
+        position: fixed;
+        inset: 0;
+        z-index: 99999;
+      }
+      .splash-container {
+        text-align: center;
+        animation: fadeIn 0.8s ease-out;
+      }
+      .splash-logo {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, #143068 0%, #1c4490 100%);
+        border-radius: 16px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: #ffffff;
+        box-shadow: 0 10px 30px rgba(20, 48, 104, 0.3);
+        margin: 0 auto 20px;
+        position: relative;
+        border: 2px solid rgba(255, 255, 255, 0.1);
+      }
+      .splash-title {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0 0 8px 0;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+      }
+      .splash-tagline {
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: #e14d4d;
+        margin-bottom: 30px;
+      }
+      .splash-spinner {
+        width: 40px;
+        height: 40px;
+        border: 3px solid rgba(255, 255, 255, 0.1);
+        border-top-color: #e14d4d;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto;
+      }
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
   </head>
   <body>
     <div id="root">
-      <h1>Medins Healthcare — Trusted Nutraceutical Company</h1>
-      <p>Medins Healthcare is a leading WHO-certified, GMP-compliant nutraceutical company in Pakistan, delivering high-quality supplements, tablets, and syrups.</p>
+      <div class="splash-screen-wrapper">
+        <div class="splash-container">
+          <div class="splash-logo">+</div>
+          <h1 class="splash-title">Medins Healthcare</h1>
+          <p class="splash-tagline">Healthcare Excellence</p>
+          <div class="splash-spinner"></div>
+        </div>
+      </div>
     </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
