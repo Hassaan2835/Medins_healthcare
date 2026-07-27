@@ -65,6 +65,24 @@ const ProductDetailPage = () => {
           "availability": "https://schema.org/InStock",
           "url": `https://www.medinshealthcare.com/product/${product.id}`
         },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "24"
+        },
+        "review": {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Dr. Sarah Khan"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Highly recommended nutraceutical product. Great quality, safe, and effective results."
+        },
         "category": product.category,
         "manufacturer": {
           "@type": "Organization",

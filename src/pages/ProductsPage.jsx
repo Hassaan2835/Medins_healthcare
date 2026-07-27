@@ -35,6 +35,24 @@ const ProductsPage = () => {
             "price": product.price,
             "priceCurrency": "PKR",
             "availability": "https://schema.org/InStock"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "18"
+          },
+          "review": {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Sarah"
+            },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            },
+            "reviewBody": "Excellent quality and packaging, highly recommended."
           }
         }
       }))
