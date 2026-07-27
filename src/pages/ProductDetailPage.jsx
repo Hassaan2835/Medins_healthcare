@@ -123,12 +123,13 @@ const ProductDetailPage = () => {
     ]
   };
 
-  const seoTitle = `${product.name} — ${product.type} | Medins Healthcare`;
-  let seoDescription = `${product.description} Packaged in ${product.packaging}.`;
-  if (seoDescription.length > 155) {
+  const seoTitle = product.seoTitle || `${product.name} — ${product.type} | Medins Healthcare`;
+  let seoDescription = product.seoDescription || `${product.description} Packaged in ${product.packaging}.`;
+  if (!product.seoDescription && seoDescription.length > 155) {
     seoDescription = seoDescription.substring(0, 152) + '...';
   }
-  const seoKeywords = `${product.name}, ${product.type}, ${product.category}, Medins products, DRAP certified, ingredients: ${product.composition.map(c => c.ingredient).join(', ')}`;
+  const seoKeywords = product.seoKeywords || `${product.name}, ${product.type}, ${product.category}, Medins products, DRAP certified, ingredients: ${product.composition.map(c => c.ingredient).join(', ')}`;
+  const ogImageEncoded = product.image ? encodeURI(`https://www.medinshealthcare.com${product.image}`) : '';
 
   return (
     <article className="product-detail-page section">
@@ -137,7 +138,7 @@ const ProductDetailPage = () => {
         description={seoDescription}
         keywords={seoKeywords}
         canonicalUrl={`https://www.medinshealthcare.com/product/${product.id}`}
-        ogImage={`https://www.medinshealthcare.com${product.image}`}
+        ogImage={ogImageEncoded}
         schema={productSchema}
       />
       <div className="container">

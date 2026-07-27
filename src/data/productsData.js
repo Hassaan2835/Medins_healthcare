@@ -184,7 +184,10 @@ export const products = [
     dosage: 'Take 1-2 tablets daily, or as directed by the physician or pharmacist.',
     storage: 'Store below 25°C. Protect from direct sunlight, heat & moisture. Keep out of reach of children.',
     packaging: '30 Tablets',
-    enlistment: 'DRAP Enlistment No. 0060 | P.Enlistment No. 0060740564'
+    enlistment: 'DRAP Enlistment No. 0060 | P.Enlistment No. 0060740564',
+    seoTitle: 'OSIK2 Tablets Price in Pakistan — Calcium, Vitamin D3 & K2 (MK-7)',
+    seoDescription: 'Order OSIK2 Tablets by Medins Healthcare. Maximum strength Bone Health Formula with Calcium, Vitamin D3, Magnesium, Zinc, and Vitamin K2 (MK-7) to direct calcium straight into bones.',
+    seoKeywords: 'OSIK2 tablets, OSIK2 price in Pakistan, OSIK2 benefits, vitamin K2 MK7 calcium tablets Pakistan, bone health supplement, neuromuscular support, Medins OSIK2, calcium K2 tablets price'
   },
   {
     id: 8,
@@ -207,7 +210,10 @@ export const products = [
     dosage: 'Take 1 sachet twice daily or as directed by physician. Dissolve J-Rex sachet in half a glass of water and consume immediately.',
     storage: 'Store below 30°C. Protect from heat & direct sunlight. Keep out of reach of children.',
     packaging: '10 Sachets',
-    enlistment: 'DRAP Enlistment No. 014321220147'
+    enlistment: 'DRAP Enlistment No. 014321220147',
+    seoTitle: 'J-REX Sachet Price in Pakistan — Collagen & Curcuma Supplement',
+    seoDescription: 'Buy J-REX Sachet by Medins Healthcare. Sugar-free Fish Collagen & Curcuma Longa sachet for joint, cartilage, and bone strength. High absorption, WHO-GMP Certified joint care.',
+    seoKeywords: 'J-REX sachet, J-REX price in Pakistan, J-REX sachet benefits, fish collagen sachet, curcuma sachet Pakistan, joint pain supplement, Medins J-REX, sugar free collagen sachet, collagen price in Pakistan'
   },
   {
     id: 9,
@@ -236,6 +242,9 @@ export const products = [
     dosage: 'Take 2 tablets daily, or as directed by the physician/pharmacist.',
     storage: 'Store below 30°C. Protect from direct sunlight, heat & moisture. Keep out of the reach of children.',
     packaging: '30 Tablets',
-    enlistment: 'DRAP Enlistment No. 0060 | Prod. E. No. 0060660182'
+    enlistment: 'DRAP Enlistment No. 0060 | Prod. E. No. 0060660182',
+    seoTitle: 'OSSICARE Tablets Price in Pakistan — Joint Cartilage & Bone Health',
+    seoDescription: 'Discover OSSICARE Tablets by Medins Healthcare. Advanced Calcium Carbonate, Vitamin D3, Magnesium, Zinc, Copper & Boron formula for bone strength and osteoporosis prevention.',
+    seoKeywords: 'OSSICARE tablets, OSSICARE price in Pakistan, OSSICARE benefits, joint cartilage supplement, osteoporosis prevention Pakistan, calcium tablets Pakistan, Medins OSSICARE, magnesium zinc copper boron tablets'
   }
 ];

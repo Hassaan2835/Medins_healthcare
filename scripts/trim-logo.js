@@ -14,7 +14,7 @@ async function trimLogo() {
     await sharp(logoPath)
       .trim()
       .toFile(tempPath);
-    
+
     // Replace the logo with the trimmed version
     import('fs').then((fs) => {
       fs.renameSync(tempPath, logoPath);
