@@ -5,7 +5,7 @@ export const products = [
     category: 'tablets',
     type: 'Nutraceutical / Vitamin D3',
     description: 'High-strength Vitamin D3 10000IU chewable tablets to adjust your Vitamin D3 levels according to your needs.',
-    image: '/images/products/3D3 Tablets.png',
+    image: '/images/products/3d3-stat-tablets.png',
     price: 1390,
     composition: [
       { ingredient: 'Vitamin D-3 (as Cholecalciferol) (USP)', strength: '10000IU' }
@@ -29,7 +29,7 @@ export const products = [
     category: 'syrups',
     type: 'Nutraceutical',
     description: 'High-quality multivitamin and nutritional syrup for daily health and energy.',
-    image: '/images/products/BIOMAK Syrup.png',
+    image: '/images/products/biomak-syrup.png',
     price: 625,
     composition: [
       { ingredient: 'Vitamin C (USP)', strength: '15mg' },
@@ -60,7 +60,7 @@ export const products = [
     category: 'syrups',
     type: 'Cardiovascular / Bone Health',
     description: 'Calcium Magnesium Zinc & Vitamin D3 suspension to help maintain strong bones.',
-    image: '/images/products/CADRIL.png',
+    image: '/images/products/cadril-syrup.png',
     price: 765,
     composition: [
       { ingredient: 'Calcium Carbonate (USP)', strength: '750mg' },
@@ -87,7 +87,7 @@ export const products = [
     category: 'tablets',
     type: 'Nutraceutical / Bone Support',
     description: 'Calcium, Magnesium, Vitamin D3, and Zinc formula to maintain strong bones for men and women of all ages.',
-    image: '/images/products/Calence Tablets.png',
+    image: '/images/products/calence-tablets.png',
     price: 1680,
     composition: [
       { ingredient: 'Calcium Carbonate (USP)', strength: '750mg' },
@@ -113,7 +113,7 @@ export const products = [
     category: 'tablets',
     type: 'Nutraceutical',
     description: 'Vitamin B12, B6, Folic Acid and Biotin chewable tablets to support muscles and nerves.',
-    image: '/images/products/FOLICO Tablets.png',
+    image: '/images/products/folico-tablets.png',
     price: 1350,
     composition: [
       { ingredient: 'Vitamin B12 (USP)', strength: '1000mcg' },
@@ -139,7 +139,7 @@ export const products = [
     category: 'syrups',
     type: 'Nutraceutical',
     description: 'Iron supplement syrup for treatment and prevention of iron deficiency anemia.',
-    image: '/images/products/IROMIK Syrup.png',
+    image: '/images/products/iromik-syrup.png',
     price: 760,
     composition: [
       { ingredient: 'Iron Bisglycinate (JECFA)', strength: '158mg' },
@@ -165,7 +165,7 @@ export const products = [
     category: 'tablets',
     type: 'Nutraceutical / Neuromuscular',
     description: 'Maximum strength Bone Health Formula combining Calcium, Vitamin D3, Magnesium, Zinc and Vitamin K2.',
-    image: '/images/products/OSIK2.jpeg',
+    image: '/images/products/osik2-tablets.jpeg',
     price: 660,
     composition: [
       { ingredient: 'Calcium Carbonate (USP)', strength: '600mg' },
@@ -195,7 +195,7 @@ export const products = [
     category: 'sachets',
     type: 'Nutraceutical / Joint Support',
     description: 'Sugar-free Fish Collagen and Curcuma Longa sachet for bone, cartilage, and joint strength.',
-    image: '/images/products/J-REX Sachet.png',
+    image: '/images/products/j-rex-sachet.png',
     price: 2190,
     composition: [
       { ingredient: 'Fish Collagen (MS)', strength: '4gm (4000mg)' },
@@ -221,7 +221,7 @@ export const products = [
     category: 'tablets',
     type: 'Nutraceutical',
     description: 'Advanced formula tablets for joint cartilage support and bone strength.',
-    image: '/images/products/OSSICARE Tablets.png',
+    image: '/images/products/ossicare-tablets.png',
     price: 1370,
     composition: [
       { ingredient: 'Calcium Carbonate (USP)', strength: '500mg' },

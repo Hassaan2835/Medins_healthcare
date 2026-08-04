@@ -83,7 +83,7 @@ const HomePage = () => {
       <Hero />
       <About />
       <CoreValues />
-      <Products limit={6} />
+      <Products />
       <VisionMission />
     </>
   );
