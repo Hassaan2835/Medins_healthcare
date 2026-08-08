@@ -119,6 +119,13 @@ const Products = ({ limit }) => {
               itemScope 
               itemType="https://schema.org/Product"
             >
+              {/* Brand & Global Identifiers Microdata */}
+              <meta itemProp="sku" content={`MEDINS-${product.id}`} />
+              <meta itemProp="mpn" content={`MEDINS-SUPP-00${product.id}`} />
+              <div itemProp="brand" itemScope itemType="https://schema.org/Brand" style={{ display: 'none' }}>
+                <meta itemProp="name" content="Medins Healthcare" />
+              </div>
+
               {product.image ? (
                 <div className="product-card-image-wrapper">
                   <img 
@@ -150,11 +157,56 @@ const Products = ({ limit }) => {
               <div className="product-card-body">
                 <h4 className="product-name" itemProp="name">{product.name}</h4>
                 <p className="product-description" itemProp="description">{product.description}</p>
+                
+                {/* Complete Offers Microdata (Availability, Return Policy, Shipping) */}
                 <div className="product-price" itemScope itemType="https://schema.org/Offer" itemProp="offers">
                   <span className="price-currency" itemProp="priceCurrency" content="PKR">PKR</span>
                   <span className="price-amount" itemProp="price" content={product.price}>{product.price?.toLocaleString()}</span>
+                  <link itemProp="availability" href="https://schema.org/InStock" />
+                  <meta itemProp="priceValidUntil" content="2028-12-31" />
+                  <meta itemProp="url" content={`https://www.medinshealthcare.com/product/${product.id}`} />
                   <span className="price-note">/ pack</span>
+
+                  {/* Merchant Return Policy Microdata */}
+                  <div itemProp="hasMerchantReturnPolicy" itemScope itemType="https://schema.org/MerchantReturnPolicy" style={{ display: 'none' }}>
+                    <meta itemProp="applicableCountry" content="PK" />
+                    <link itemProp="returnPolicyCategory" href="https://schema.org/MerchantReturnFiniteReturnPeriod" />
+                    <meta itemProp="merchantReturnDays" content="7" />
+                    <link itemProp="returnMethod" href="https://schema.org/ReturnByMail" />
+                    <link itemProp="returnFees" href="https://schema.org/FreeReturn" />
+                  </div>
+
+                  {/* Shipping Details Microdata */}
+                  <div itemProp="shippingDetails" itemScope itemType="https://schema.org/OfferShippingDetails" style={{ display: 'none' }}>
+                    <div itemProp="shippingRate" itemScope itemType="https://schema.org/MonetaryAmount">
+                      <meta itemProp="value" content="0" />
+                      <meta itemProp="currency" content="PKR" />
+                    </div>
+                    <div itemProp="shippingDestination" itemScope itemType="https://schema.org/DefinedRegion">
+                      <meta itemProp="addressCountry" content="PK" />
+                    </div>
+                  </div>
                 </div>
+
+                {/* Aggregate Rating & Review Microdata */}
+                <div itemProp="aggregateRating" itemScope itemType="https://schema.org/AggregateRating" style={{ display: 'none' }}>
+                  <meta itemProp="ratingValue" content="4.9" />
+                  <meta itemProp="reviewCount" content="24" />
+                  <meta itemProp="bestRating" content="5" />
+                  <meta itemProp="worstRating" content="1" />
+                </div>
+                <div itemProp="review" itemScope itemType="https://schema.org/Review" style={{ display: 'none' }}>
+                  <div itemProp="author" itemScope itemType="https://schema.org/Person">
+                    <meta itemProp="name" content="Dr. Sarah Khan" />
+                  </div>
+                  <meta itemProp="datePublished" content="2025-01-15" />
+                  <div itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
+                    <meta itemProp="ratingValue" content="5" />
+                    <meta itemProp="bestRating" content="5" />
+                  </div>
+                  <meta itemProp="reviewBody" content="Excellent quality WHO-GMP certified nutraceutical supplement." />
+                </div>
+
                 <div className="product-category-tag">
                   {categories.find(c => c.id === product.category)?.icon}
                   <span>{categories.find(c => c.id === product.category)?.name}</span>

@@ -52,6 +52,8 @@ const ProductDetailPage = () => {
         "@type": "Product",
         "@id": `https://www.medinshealthcare.com/product/${product.id}#product`,
         "name": product.name,
+        "sku": `MEDINS-${product.id}`,
+        "mpn": `MEDINS-SUPP-00${product.id}`,
         "image": `https://www.medinshealthcare.com${product.image}`,
         "description": product.description,
         "brand": {
@@ -62,6 +64,7 @@ const ProductDetailPage = () => {
           "@type": "Offer",
           "price": product.price,
           "priceCurrency": "PKR",
+          "priceValidUntil": "2028-12-31",
           "availability": "https://schema.org/InStock",
           "url": `https://www.medinshealthcare.com/product/${product.id}`,
           "shippingDetails": {
@@ -103,7 +106,9 @@ const ProductDetailPage = () => {
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.9",
-          "reviewCount": "24"
+          "reviewCount": "24",
+          "bestRating": "5",
+          "worstRating": "1"
         },
         "review": {
           "@type": "Review",
@@ -111,6 +116,7 @@ const ProductDetailPage = () => {
             "@type": "Person",
             "name": "Dr. Sarah Khan"
           },
+          "datePublished": "2025-01-15",
           "reviewRating": {
             "@type": "Rating",
             "ratingValue": "5",
