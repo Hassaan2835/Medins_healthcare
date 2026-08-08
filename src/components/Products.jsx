@@ -171,7 +171,7 @@ const Products = ({ limit }) => {
                   {/* Merchant Return Policy Microdata */}
                   <div itemProp="hasMerchantReturnPolicy" itemScope itemType="https://schema.org/MerchantReturnPolicy" style={{ display: 'none' }}>
                     <meta itemProp="applicableCountry" content="PK" />
-                    <link itemProp="returnPolicyCategory" href="https://schema.org/MerchantReturnFiniteReturnPeriod" />
+                    <link itemProp="returnPolicyCategory" href="https://schema.org/MerchantReturnFiniteReturnWindow" />
                     <meta itemProp="merchantReturnDays" content="7" />
                     <link itemProp="returnMethod" href="https://schema.org/ReturnByMail" />
                     <link itemProp="returnFees" href="https://schema.org/FreeReturn" />
