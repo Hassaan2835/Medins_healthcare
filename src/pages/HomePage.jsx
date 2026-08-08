@@ -73,10 +73,10 @@ const HomePage = () => {
 
   return (
     <>
-      <SEO 
+      <SEO
         title="Medins & Medins Healthcare — Official Website | Nutraceuticals"
         description="Official website of Medins & Medins Healthcare. Leading WHO-certified, GMP-compliant nutraceutical company in Pakistan delivering high-quality supplements, tablets, syrups, and sachets."
-        keywords="Medins, Medins Healthcare, Medins official website, Medins Pakistan, Medins nutraceuticals, Medins products, CADRIL syrup, 3D3 STAT, OSIK2, Medins health care"
+        keywords="Medins, Medins Healthcare, Medins official website, Medins Pakistan, Medins nutraceuticals, Medins products, CADRIL syrup, 3D3 STAT, OSIK2,j rex sachet, folico, calence, osik2, ossicare, Medins health care"
         canonicalUrl="https://www.medinshealthcare.com"
         schema={homeSchema}
       />
