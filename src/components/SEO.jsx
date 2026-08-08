@@ -29,12 +29,22 @@ const SEO = ({ title, description, keywords, ogTitle, ogDescription, ogImage, ca
     // 2. Update meta tags
     setMetaTag('description', null, description);
     setMetaTag('keywords', null, keywords);
+    setMetaTag('robots', null, 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
 
-    // 3. Update OpenGraph tags
+    // 3. Update OpenGraph and Twitter image tags
     setMetaTag(null, 'og:title', ogTitle || title);
     setMetaTag(null, 'og:description', ogDescription || description);
+    setMetaTag('twitter:card', null, 'summary_large_image');
+    setMetaTag('twitter:title', null, ogTitle || title);
+    setMetaTag('twitter:description', null, ogDescription || description);
+
     if (ogImage) {
       setMetaTag(null, 'og:image', ogImage);
+      setMetaTag(null, 'og:image:secure_url', ogImage);
+      setMetaTag(null, 'og:image:width', '1200');
+      setMetaTag(null, 'og:image:height', '630');
+      setMetaTag(null, 'og:image:alt', title || 'Medins Healthcare Product Image');
+      setMetaTag('twitter:image', null, ogImage);
     }
 
     // 4. Update canonical link

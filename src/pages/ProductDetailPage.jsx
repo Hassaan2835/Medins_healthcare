@@ -141,7 +141,10 @@ const ProductDetailPage = () => {
         "@type": "ImageObject",
         "@id": `https://www.medinshealthcare.com/product/${product.id}#image`,
         "url": `https://www.medinshealthcare.com${product.image}`,
-        "caption": `${product.name} - ${product.type} by Medins Healthcare`
+        "contentUrl": `https://www.medinshealthcare.com${product.image}`,
+        "caption": `${product.name} - ${product.type} by Medins Healthcare`,
+        "width": 1200,
+        "height": 1200
       },
       {
         "@type": "FAQPage",

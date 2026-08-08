@@ -6,6 +6,99 @@
   position: relative;
 }
 
+/* Search Box */
+.products-search-box {
+  max-width: 600px;
+  margin: 0 auto 24px;
+  padding: 0 16px;
+}
+
+.search-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 18px;
+  color: var(--primary);
+  font-size: 1.1rem;
+  pointer-events: none;
+}
+
+.products-search-input {
+  width: 100%;
+  padding: 14px 48px 14px 48px;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--dark-200);
+  background: #ffffff;
+  font-size: 0.95rem;
+  color: var(--dark-800);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  transition: var(--transition-base);
+  outline: none;
+}
+
+.products-search-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 4px 20px rgba(13, 110, 110, 0.15);
+}
+
+.search-clear-btn {
+  position: absolute;
+  right: 16px;
+  background: var(--dark-100);
+  border: none;
+  color: var(--dark-500);
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: var(--transition-base);
+}
+
+.search-clear-btn:hover {
+  background: #e14d4d;
+  color: #ffffff;
+}
+
+/* Empty Search State */
+.products-empty-state {
+  text-align: center;
+  padding: 48px 24px;
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  border: 1px dashed var(--dark-300);
+  margin-bottom: 36px;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.products-empty-state .empty-icon {
+  font-size: 2.5rem;
+  color: var(--dark-400);
+  margin-bottom: 12px;
+}
+
+.products-empty-state h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--dark-800);
+  margin-bottom: 8px;
+}
+
+.products-empty-state p {
+  font-size: 0.9rem;
+  color: var(--dark-600);
+}
+
 /* Filter */
 .products-filter {
   display: flex;
@@ -194,6 +287,20 @@
    RESPONSIVE
    ============================================ */
 @media (max-width: 768px) {
+  .products-search-box {
+    padding: 0 8px;
+  }
+
+  .products-search-input {
+    font-size: 0.85rem;
+    padding: 12px 40px 12px 42px;
+  }
+
+  .search-icon {
+    left: 14px;
+    font-size: 0.95rem;
+  }
+
   .products-filter {
     gap: 8px;
   }
@@ -204,11 +311,7 @@
   }
 
   .filter-name {
-    display: none;
-  }
-
-  .filter-btn.active .filter-name {
-    display: inline;
+    display: inline-block;
   }
 
   .products-grid {
