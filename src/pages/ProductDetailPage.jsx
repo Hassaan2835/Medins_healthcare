@@ -54,7 +54,6 @@ const ProductDetailPage = () => {
         "name": product.name,
         "sku": `MEDINS-${product.id}`,
         "mpn": `MEDINS-SUPP-00${product.id}`,
-        "gtin13": `61820100000${product.id}`,
         "image": `https://www.medinshealthcare.com${product.image}`,
         "description": product.description,
         "brand": {
@@ -65,6 +64,7 @@ const ProductDetailPage = () => {
           "@type": "Offer",
           "price": product.price,
           "priceCurrency": "PKR",
+          "validFrom": "2025-01-01",
           "priceValidUntil": "2028-12-31",
           "availability": "https://schema.org/InStock",
           "url": `https://www.medinshealthcare.com/product/${product.id}`,
