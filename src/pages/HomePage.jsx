@@ -74,9 +74,9 @@ const HomePage = () => {
   return (
     <>
       <SEO 
-        title="Medins Healthcare — Trusted Nutraceutical Company"
-        description="Medins Healthcare is a leading WHO-certified, GMP-compliant nutraceutical company in Pakistan, delivering high-quality supplements, tablets, and syrups."
-        keywords="Medins Healthcare, nutraceutical company, dietary supplements, WHO certified, GMP, tablets, syrups, sachets, Rawalpindi healthcare, Pakistan nutraceuticals"
+        title="Medins & Medins Healthcare — Official Website | Nutraceuticals"
+        description="Official website of Medins & Medins Healthcare. Leading WHO-certified, GMP-compliant nutraceutical company in Pakistan delivering high-quality supplements, tablets, syrups, and sachets."
+        keywords="Medins, Medins Healthcare, Medins official website, Medins Pakistan, Medins nutraceuticals, Medins products, CADRIL syrup, 3D3 STAT, OSIK2, Medins health care"
         canonicalUrl="https://www.medinshealthcare.com"
         schema={homeSchema}
       />
