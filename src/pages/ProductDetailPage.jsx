@@ -54,6 +54,7 @@ const ProductDetailPage = () => {
         "name": product.name,
         "sku": `MEDINS-${product.id}`,
         "mpn": `MEDINS-SUPP-00${product.id}`,
+        "gtin13": `61820100000${product.id}`,
         "image": `https://www.medinshealthcare.com${product.image}`,
         "description": product.description,
         "brand": {

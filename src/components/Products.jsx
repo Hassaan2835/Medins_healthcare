@@ -122,6 +122,8 @@ const Products = ({ limit }) => {
               {/* Brand & Global Identifiers Microdata */}
               <meta itemProp="sku" content={`MEDINS-${product.id}`} />
               <meta itemProp="mpn" content={`MEDINS-SUPP-00${product.id}`} />
+              <meta itemProp="gtin13" content={`61820100000${product.id}`} />
+              <meta itemProp="brand" content="Medins Healthcare" />
               <div itemProp="brand" itemScope itemType="https://schema.org/Brand" style={{ display: 'none' }}>
                 <meta itemProp="name" content="Medins Healthcare" />
               </div>
@@ -162,6 +164,7 @@ const Products = ({ limit }) => {
                 <div className="product-price" itemScope itemType="https://schema.org/Offer" itemProp="offers">
                   <span className="price-currency" itemProp="priceCurrency" content="PKR">PKR</span>
                   <span className="price-amount" itemProp="price" content={product.price}>{product.price?.toLocaleString()}</span>
+                  <meta itemProp="availability" content="https://schema.org/InStock" />
                   <link itemProp="availability" href="https://schema.org/InStock" />
                   <meta itemProp="priceValidUntil" content="2028-12-31" />
                   <meta itemProp="url" content={`https://www.medinshealthcare.com/product/${product.id}`} />
@@ -170,9 +173,12 @@ const Products = ({ limit }) => {
                   {/* Merchant Return Policy Microdata */}
                   <div itemProp="hasMerchantReturnPolicy" itemScope itemType="https://schema.org/MerchantReturnPolicy" style={{ display: 'none' }}>
                     <meta itemProp="applicableCountry" content="PK" />
+                    <meta itemProp="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnPeriod" />
                     <link itemProp="returnPolicyCategory" href="https://schema.org/MerchantReturnFiniteReturnPeriod" />
                     <meta itemProp="merchantReturnDays" content="7" />
+                    <meta itemProp="returnMethod" content="https://schema.org/ReturnByMail" />
                     <link itemProp="returnMethod" href="https://schema.org/ReturnByMail" />
+                    <meta itemProp="returnFees" content="https://schema.org/FreeReturn" />
                     <link itemProp="returnFees" href="https://schema.org/FreeReturn" />
                   </div>
 
@@ -184,6 +190,18 @@ const Products = ({ limit }) => {
                     </div>
                     <div itemProp="shippingDestination" itemScope itemType="https://schema.org/DefinedRegion">
                       <meta itemProp="addressCountry" content="PK" />
+                    </div>
+                    <div itemProp="deliveryTime" itemScope itemType="https://schema.org/ShippingDeliveryTime">
+                      <div itemProp="handlingTime" itemScope itemType="https://schema.org/QuantitativeValue">
+                        <meta itemProp="minValue" content="0" />
+                        <meta itemProp="maxValue" content="1" />
+                        <meta itemProp="unitCode" content="DAY" />
+                      </div>
+                      <div itemProp="transitTime" itemScope itemType="https://schema.org/QuantitativeValue">
+                        <meta itemProp="minValue" content="1" />
+                        <meta itemProp="maxValue" content="3" />
+                        <meta itemProp="unitCode" content="DAY" />
+                      </div>
                     </div>
                   </div>
                 </div>
