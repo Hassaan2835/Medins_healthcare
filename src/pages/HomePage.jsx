@@ -23,6 +23,7 @@ const HomePage = () => {
         "url": "https://www.medinshealthcare.com",
         "logo": "https://www.medinshealthcare.com/logo.png",
         "sameAs": [
+          "https://www.facebook.com/profile.php?id=61593090617991",
           "https://www.linkedin.com/in/hassaankhanofficial/"
         ],
         "contactPoint": {
@@ -66,7 +67,10 @@ const HomePage = () => {
           "opens": "09:00",
           "closes": "18:00"
         },
-        "knowsAbout": ["Nutraceutical Products", "Dietary Supplements", "WHO Certified GMP Standards"]
+        "knowsAbout": ["Nutraceutical Products", "Dietary Supplements", "WHO Certified GMP Standards"],
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61593090617991"
+        ]
       }
     ]
   };

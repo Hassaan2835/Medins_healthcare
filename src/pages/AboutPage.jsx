@@ -54,6 +54,9 @@ const AboutPage = () => {
       "logo": "https://www.medinshealthcare.com/logo.png",
       "description": "Medins Healthcare is a premier nutraceutical company based in Pakistan. Specializing in WHO-certified GMP compliant dietary supplements.",
       "foundingDate": "2015",
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61593090617991"
+      ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "street#26-A, Extension Chaklala scheme III",

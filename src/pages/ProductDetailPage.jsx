@@ -58,7 +58,10 @@ const ProductDetailPage = () => {
         "description": product.description,
         "brand": {
           "@type": "Brand",
-          "name": "Medins Healthcare"
+          "name": "Medins Healthcare",
+          "sameAs": [
+            "https://www.facebook.com/profile.php?id=61593090617991"
+          ]
         },
         "offers": {
           "@type": "Offer",
@@ -129,7 +132,10 @@ const ProductDetailPage = () => {
         "manufacturer": {
           "@type": "Organization",
           "name": "Medins Healthcare",
-          "url": "https://www.medinshealthcare.com"
+          "url": "https://www.medinshealthcare.com",
+          "sameAs": [
+            "https://www.facebook.com/profile.php?id=61593090617991"
+          ]
         },
         "additionalProperty": [
           {

@@ -73,6 +73,9 @@ const ContactPage = () => {
       "url": "https://www.medinshealthcare.com",
       "telephone": "+923325434674",
       "email": "kq.malik400@gmail.com",
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61593090617991"
+      ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "street#26-A, Extension Chaklala scheme III",
