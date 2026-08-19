@@ -61,7 +61,7 @@ const Footer = () => {
                   heart of everything we do.
                 </p>
                 <div className="footer-socials">
-                  <a href="#" className="social-link" aria-label="Facebook"><FaFacebookF /></a>
+                  <a href="https://www.facebook.com/profile.php?id=61593090617991" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Facebook"><FaFacebookF /></a>
                   <a href="#" className="social-link" aria-label="Twitter"><FaTwitter /></a>
                   <a href="#" className="social-link" aria-label="LinkedIn"><FaLinkedinIn /></a>
                   <a href="#" className="social-link" aria-label="Instagram"><FaInstagram /></a>
