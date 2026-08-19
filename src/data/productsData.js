@@ -21,7 +21,10 @@ export const products = [
     dosage: 'Recommended STAT dose. Take 1 tablet weekly, or as directed by your healthcare professional.',
     storage: 'Store below 30°C. Protect from light, heat and moisture. Keep out of reach of children.',
     packaging: '30 Chewable Tablets',
-    enlistment: 'DRAP Enlistment No. 0060'
+    enlistment: 'DRAP Enlistment No. 0060',
+    seoTitle: '3D3 STAT Chewable Tablets Price in Pakistan — Vitamin D3 10000IU',
+    seoDescription: 'Buy 3D3 STAT Chewable Tablets by Medins Healthcare. High-strength Vitamin D3 10000IU for immune support, bone health, diabetic health, and joint strength.',
+    seoKeywords: '3D3 STAT tablets, 3D3 STAT price in Pakistan, 3D3 STAT benefits, vitamin D3 10000IU tablets Pakistan, bone health supplement, Medins 3D3 STAT, cholecalciferol tablets'
   },
   {
     id: 2,
@@ -52,7 +55,10 @@ export const products = [
     dosage: 'Children: 1 to 2 teaspoonfuls daily. Adults: 1 to 2 tablespoonfuls daily. Or as directed by the physician. (Shake well before use)',
     storage: 'Store below 25°C. Protect from direct sunlight, heat & moisture. Keep out of reach of children.',
     packaging: '240ml Syrup',
-    enlistment: 'DRAP Enlistment No. 0060 | Prod. E. No. 0060740562'
+    enlistment: 'DRAP Enlistment No. 0060 | Prod. E. No. 0060740562',
+    seoTitle: 'BIOMAK Syrup Price in Pakistan — Multivitamin & Mineral Syrup',
+    seoDescription: 'Order BIOMAK Syrup by Medins Healthcare. Multivitamin & Mineral syrup with Vitamin C, D3, A, B-Complex, Lysine & Zinc for kids & adult daily energy.',
+    seoKeywords: 'BIOMAK syrup, BIOMAK price in Pakistan, BIOMAK syrup benefits, multivitamin syrup Pakistan, kids multivitamin syrup, Medins BIOMAK, appetite stimulant syrup'
   },
   {
     id: 3,
@@ -79,7 +85,10 @@ export const products = [
     dosage: 'Adults: 2 teaspoonfuls twice daily. Pregnancy/Lactation: 2 teaspoonfuls twice daily. Children (3-12 years): 2 teaspoonfuls 1-2 times daily. Do not exceed the recommended intake.',
     storage: 'Store in a cool & dry place below 30°C. Protect from direct sunlight. Keep out of reach of children.',
     packaging: '120ml Suspension',
-    enlistment: 'DRAP Enlistment No. 0060 | P.Enlistment No. 00600020'
+    enlistment: 'DRAP Enlistment No. 0060 | P.Enlistment No. 00600020',
+    seoTitle: 'CADRIL Syrup Price in Pakistan — Calcium, Magnesium, Zinc & Vitamin D3',
+    seoDescription: 'Buy CADRIL Syrup by Medins Healthcare. Calcium Carbonate, Magnesium, Zinc & Vitamin D3 suspension for strong bones, teeth, and cardiovascular health.',
+    seoKeywords: 'CADRIL syrup, CADRIL price in Pakistan, CADRIL syrup benefits, calcium syrup Pakistan, calcium magnesium zinc D3 syrup, Medins CADRIL, bone growth syrup'
   },
   {
     id: 4,
@@ -105,7 +114,10 @@ export const products = [
     dosage: 'Adults: Take 1-2 tablets daily or as directed by the physician.',
     storage: 'Store below 25°C. Protect from direct sunlight, heat & moisture. Keep out of the reach of children.',
     packaging: '30 Tablets',
-    enlistment: 'DRAP Enlistment No. 0060 | Prod. E. No. 0060820863'
+    enlistment: 'DRAP Enlistment No. 0060 | Prod. E. No. 0060820863',
+    seoTitle: 'CALENCE Tablets Price in Pakistan — Calcium, Magnesium & Vitamin D3',
+    seoDescription: 'Order CALENCE Tablets by Medins Healthcare. Essential Calcium Carbonate, Magnesium, Zinc & Vitamin D3 formula to maintain strong bone density.',
+    seoKeywords: 'CALENCE tablets, CALENCE price in Pakistan, CALENCE benefits, calcium tablets Pakistan, bone density supplement, Medins CALENCE, calcium D3 zinc tablets'
   },
   {
     id: 5,
@@ -131,7 +143,10 @@ export const products = [
     dosage: 'Chew 1-2 tablets daily, or as directed by the physician/pharmacist.',
     storage: 'Store below 25°C. Protect from direct sunlight, heat & moisture. Keep out of the reach of children.',
     packaging: '30 Chewable Tablets',
-    enlistment: 'DRAP Enlistment No. 0060 | Prod.E. No. 0060660161 | M.R.P. RS: 1350/-'
+    enlistment: 'DRAP Enlistment No. 0060 | Prod.E. No. 0060660161 | M.R.P. RS: 1350/-',
+    seoTitle: 'FOLICO Tablets Price in Pakistan — Vitamin B12, B6, Folic Acid & Biotin',
+    seoDescription: 'Buy FOLICO Chewable Tablets by Medins Healthcare. Vitamin B12, B6, Folic Acid & Biotin chewable tablets for nervous system, muscle health & anemia.',
+    seoKeywords: 'FOLICO tablets, FOLICO price in Pakistan, FOLICO benefits, folic acid vitamin B12 tablets Pakistan, nerve health supplement, Medins FOLICO, chewable folic acid'
   },
   {
     id: 6,
@@ -157,7 +172,10 @@ export const products = [
     dosage: 'Children: 1-2 teaspoonfuls daily. Adults: 1-2 tablespoonfuls daily. Or as directed by the physician. (Shake well before use)',
     storage: 'Store below 25°C. Protect from direct sunlight, heat & moisture. Keep out of reach of children.',
     packaging: '240ml Syrup',
-    enlistment: 'DRAP Enlistment No. 0060 | P.Enlistment No. 0060980316'
+    enlistment: 'DRAP Enlistment No. 0060 | P.Enlistment No. 0060980316',
+    seoTitle: 'IROMIK Syrup Price in Pakistan — Iron Bisglycinate, Folic Acid & B12',
+    seoDescription: 'Order IROMIK Syrup by Medins Healthcare. Gentle Iron Bisglycinate, Folic Acid, Vitamin B12 & Zinc syrup for iron deficiency anemia prevention.',
+    seoKeywords: 'IROMIK syrup, IROMIK price in Pakistan, IROMIK syrup benefits, iron syrup Pakistan, iron deficiency anemia syrup, Medins IROMIK, iron bisglycinate syrup'
   },
   {
     id: 7,
