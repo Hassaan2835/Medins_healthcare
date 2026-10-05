@@ -31,25 +31,24 @@ const ContactPage = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch('https://formsubmit.co/ajax/kq.malik400@gmail.com', {
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json'
         },
         body: JSON.stringify({
+          access_key: '82a56186-b6b9-4b20-b0ee-dff0b21c5468',
           name: formData.name,
           email: formData.email,
           phone: formData.phone || 'Not provided',
-          subject: formData.subject,
+          subject: `New Medins Healthcare Contact Form: ${formData.subject}`,
           message: formData.message,
-          _subject: `New Medins Healthcare Contact Form: ${formData.subject}`,
-          _cc: 'medinshealthcare@gmail.com',
-          _template: 'table'
+          from_name: 'Medins Healthcare Website'
         }),
       });
       const data = await response.json();
-      if (response.ok && (data.success === 'true' || data.success === true)) {
+      if (response.ok && data.success) {
         setIsSubmitted(true);
         setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
       } else {
@@ -72,7 +71,7 @@ const ContactPage = () => {
       "image": "https://www.medinshealthcare.com/logo.png",
       "url": "https://www.medinshealthcare.com",
       "telephone": "+923325434674",
-      "email": "kq.malik400@gmail.com",
+      "email": "medinshealthcare@gmail.com",
       "sameAs": [
         "https://www.facebook.com/profile.php?id=61593090617991"
       ],
@@ -146,7 +145,7 @@ const ContactPage = () => {
                 <FaEnvelope />
               </div>
               <h4>Email Us</h4>
-              <a href="mailto:kq.malik400@gmail.com">kq.malik400@gmail.com <br />medinshealthcare@gmail.com</a>
+              <a href="mailto:medinshealthcare@gmail.com">medinshealthcare@gmail.com</a>
             </div>
             <div className="contact-info-card">
               <div className="contact-info-icon">
