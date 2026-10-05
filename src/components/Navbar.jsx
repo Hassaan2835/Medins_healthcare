@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
-import { FaWhatsapp, FaPhoneAlt } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -36,12 +36,8 @@ const Navbar = () => {
       <div className="top-bar">
         <div className="container top-bar-content">
           <div className="top-bar-left">
-            <a href="tel:+923325434674" className="top-bar-item">
-              <FaPhoneAlt /> +92 332 5434674
-            </a>
-            <span className="top-bar-divider">|</span>
-            <a href="mailto:kq.malik400@gmail.com" className="top-bar-item">
-              kq.malik400@gmail.com
+            <a href="mailto:medinshealthcare@gmail.com" className="top-bar-item">
+              medinshealthcare@gmail.com
             </a>
           </div>
           <div className="top-bar-right">
