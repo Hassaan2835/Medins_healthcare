@@ -51,7 +51,7 @@ app.post('/api/contact', async (req, res) => {
   console.log(`Message: ${message}`);
   console.log('----------------------------\n');
 
-  const receiverEmail = process.env.EMAIL_RECEIVER || 'kq.malik400@gmail.com, medinshealthcare@gmail.com';
+  const receiverEmail = process.env.EMAIL_RECEIVER || 'medinshealthcare@gmail.com';
   const senderUser = process.env.EMAIL_USER;
   const senderPass = process.env.EMAIL_PASS;
 
